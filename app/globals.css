@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -26,4 +26,63 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+} */
+
+/* Contact Section */
+
+.csubheading{
+  color: #D6D6D6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.inputw{
+  width: 40rem;
+  display: inline-flex;
+  padding: 12px 28px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 5px;
+  background: #290344;
+}
+
+.inputm{
+  height: 7rem;
+  padding-left:12px;
+  padding-top: 8px;
+ 
+}
+.cbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #0C001F;;
+  width: 40rem;
+  padding: 12px 28px;
+}
+
+.contacttextbox{
+  width: 40rem;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 300;
+  letter-spacing:.7px;
+  color: #D6D6D6;
+}
+.clinks{
+  color: #D6D6D6;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.copyright{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
