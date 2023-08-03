@@ -89,6 +89,49 @@ body {
   line-height: normal;
 }
 
+
+
+/* Story Section */
+.gif{
+  border-radius: 14px;
+  border: 6px solid #000;
+
+}
+
+.endless{
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 420px;
+  margin-left: 70px;
+}
+.endless-content{
+  width: 480px;
+  color: #DFDFDF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 70px;
+  padding-top: 20px;
+}
+
+.endless-content span{
+  background: linear-gradient(54deg, #4EA0FB 0%, #9354F7 49.98%, #D70BF4 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+
+/* Media Queries */
+
 @media (max-width: 640px) {
   .inputw {
     width: 100%;
@@ -109,4 +152,19 @@ body {
   .contacttextbox {
     width: 98%;
   }
+  .gif{
+    display: none;
+  }
+  .endless{
+    font-size: 12px;
+    line-height: normal;
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+
+ 
 }
+
+
+
+
