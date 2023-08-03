@@ -28,16 +28,19 @@ body {
   border: 0;
 } */
 
+
+
 /* Contact Section */
 
-.csubheading{
-  color: #D6D6D6;
+.csubheading {
+  color: #d6d6d6;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
 }
-.inputw{
-  width: 40rem;
+.inputw {
+  /* width: 40rem; */
+  width: 650px;
   display: inline-flex;
   padding: 12px 28px;
   align-items: flex-start;
@@ -46,33 +49,32 @@ body {
   background: #290344;
 }
 
-.inputm{
+.inputm {
   height: 7rem;
-  padding-left:12px;
+  padding-left: 12px;
   padding-top: 8px;
- 
 }
-.cbutton{
+.cbutton {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 6px;
-  background: #0C001F;;
-  width: 40rem;
+  background: #0c001f;
+  width: 650px;
   padding: 12px 28px;
 }
 
-.contacttextbox{
-  width: 40rem;
+.contacttextbox {
+  width: 650px;
   font-size: 14px;
   line-height: normal;
   font-weight: 300;
-  letter-spacing:.7px;
-  color: #D6D6D6;
+  letter-spacing: 0.7px;
+  color: #d6d6d6;
 }
-.clinks{
-  color: #D6D6D6;
+.clinks {
+  color: #d6d6d6;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -80,9 +82,31 @@ body {
   cursor: pointer;
 }
 
-.copyright{
+.copyright {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width: 640px) {
+  .inputw {
+    width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputm {
+    width: 70%;
+    margin-left: 60px;
+    /* margin-right: 15px; */
+  }
+  .cbutton {
+    width: 70%;
+  }
+  .contacttextbox {
+    width: 98%;
+  }
 }
