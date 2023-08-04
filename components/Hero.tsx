@@ -19,7 +19,7 @@ const Hero =() =>{
         { title: 'AI Summarizee', text: 'Lorem ipsum dolor sit amet consectetur. Tellus massa dictumst adipiscing' },
         { title: 'Unread Snaps', text: 'Lorem ipsum dolor sit amet consectetur. Tellus massa dictumst adipiscing' },
       ];
-    return(
+    return (
         <>
         <div className='lg:block sm:hidden xs:hidden'><Header/></div>
     <div className='relative'>
@@ -135,7 +135,7 @@ const Hero =() =>{
 
 
 
-//         </>
-//     )
-// }
-// export default Hero
+      </>
+   )
+}
+ export default Hero
