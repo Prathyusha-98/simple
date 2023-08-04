@@ -8,9 +8,9 @@ import EndlessStory from '@/components/EndlessStory'
 export default function Page() {
   return (
     <>
-    {/* <Hero/> */}
-    <EndlessStory/>
-    <Banner/>
+     {/* <Hero/>  */}
+     <EndlessStory/>
+    <Banner/> 
     <Contact/>
     </>
   )

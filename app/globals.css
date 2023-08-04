@@ -28,8 +28,6 @@ body {
   border: 0;
 } */
 
-
-
 /* Contact Section */
 
 .csubheading {
@@ -89,46 +87,69 @@ body {
   line-height: normal;
 }
 
-
-
 /* Story Section */
-.gif{
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.gif {
   border-radius: 14px;
   border: 6px solid #000;
-
 }
 
-.endless{
+.endless {
   color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 420px;
-  margin-left: 70px;
+  margin-top: 434px;
+  margin-left: 88px;
 }
-.endless-content{
+.endless-content {
   width: 480px;
-  color: #DFDFDF;
+  color: #dfdfdf;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 70px;
-  padding-top: 20px;
+  margin-left: 88px;
+  padding-top: 24px;
 }
 
-.endless-content span{
-  background: linear-gradient(54deg, #4EA0FB 0%, #9354F7 49.98%, #D70BF4 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.endless-content span {
+  background: linear-gradient(54deg, #4ea0fb 0%, #9354f7 49.98%, #d70bf4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-
+.ebutton {
+  margin-left: 88px;
+  padding-top: 22px;
+}
+.ebutton1 {
+  width: 143px;
+  font-size: 16px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.ebutton2 {
+  width: 143px;
+  height: 44px;
+  font-size: 16px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: solid 1px;
+}
 
 /* Media Queries */
 
@@ -152,19 +173,36 @@ line-height: normal;
   .contacttextbox {
     width: 98%;
   }
-  .gif{
+  .gif {
     display: none;
   }
-  .endless{
+  .endlesstext {
+    align-items: center;
+    justify-content: center;
+    text-align: left !important;
+  }
+  .endless {
     font-size: 12px;
     line-height: normal;
-    margin-top: 100px;
-    margin-left: 10px;
+    margin-top: 220px;
+    margin-left: 70px;
+  }
+  .endless-content {
+    font-size: 15px;
+    width: 70%;
+    margin-left: 70px;
+  }
+  .endless-content span {
+    font-size: 15px;
   }
 
- 
+  .ebutton {
+    margin-left: 70px;
+    padding-top: 18px;
+  }
+  .ebutton1,
+  .ebutton2 {
+    width: 120px;
+    font-size: 14px;
+  }
 }
-
-
-
-
