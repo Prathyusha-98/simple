@@ -4,16 +4,17 @@ import Banner from '@/components/Banner'
 import Contact from '../components/Contact'
 import EndlessStory from '@/components/EndlessStory'
 import Simplemail from '@/components/Simplemail'
+import Hero from '@/components/Hero'
 
 
 export default function Page() {
   return (
     <>
-     {/* <Hero/>  */}
+     <Hero/>  
      <Simplemail />
      <EndlessStory/>
-    <Banner/> 
-    <Contact/>
+      <Banner/> 
+      <Contact/>
     </>
   )
 }

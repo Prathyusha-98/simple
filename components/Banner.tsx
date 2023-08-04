@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import banner from "@/assets/Banner.svg"
 const Banner = () => {
   return (
     <section className="">
       <div className="banner w-full h-0 relative " style={{ paddingBottom: "35%" }}>
         <Image
-          src="/images/banner.svg"
+          src={banner}
           alt="Banner Image"
           layout="fill"
           objectFit="cover"

@@ -1,12 +1,17 @@
 import React from "react";
 import Image from "next/image";
-
+import linkedin from "@/assets/linkedin.png"
+import twitter from "@/assets/twitter.png"
+import facebook from "@/assets/facebook.png"
+import instagram from "@/assets/instagram.png"
+import bgcontact from "@/assets/bgcontact.svg"
+import Link from 'next/link'
 const contact = () => {
   return (
-    <section className="contact bg-gray-200 min-h-screen relative">
+    <div className="contact bg-gray-200 min-h-screen relative">
       <div className="w-full h-full absolute inset-0">
         <Image
-          src="/images/bgcontact.svg"
+          src={bgcontact}
           alt="Hero Image"
           layout="fill"
           objectFit="cover"
@@ -15,7 +20,7 @@ const contact = () => {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="text-white max-w-lg text-center pt-10">
-          <h1 className="text-4xl font-normal">Let's Talk</h1>
+          <p className="text-4xl font-normal">Let`s Talk</p>
           <p className=" pt-4 csubheading">
             Start simplifying your life with Simple AI today!
           </p>
@@ -82,53 +87,53 @@ const contact = () => {
           </p>
         </div>
         <div className=" flex justify-center items-center space-x-4 pt-8">
-          <a
+          <Link
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/facebook.svg"
+            <Image
+              src={facebook}
               alt="Facebook"
               className="w-6 h-6"
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/images/twitter.svg" alt="Twitter" className="w-6 h-6" />
-          </a>
-          <a
+            <Image src={twitter} alt="Twitter" className="w-6 h-6" />
+          </Link>
+          <Link
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/instagram.svg"
+            <Image
+              src={instagram}
               alt="Instagram"
               className="w-6 h-6"
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/linkedin.svg"
+            <Image
+              src={linkedin}
               alt="LinkedIn"
               className="w-6 h-6"
             />
-          </a>
+          </Link>
         </div>
 
         <div className="copyright text-center text-white pt-5">
           <p>© Copyright 2023 - Simple AI</p>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
