@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-
+import mailpic from "@/assets/mailpic.svg"
+import mailbg from "@/assets/mailbg.svg"
 const Simplemail = () => {
   return (
     <section className="relative">
@@ -9,7 +10,7 @@ const Simplemail = () => {
         style={{ paddingBottom: "30%" }}
       >
         <Image
-          src="/images/mailbg.svg"
+          src={mailbg}
           alt="Mail Image"
           layout="fill"
           objectFit="cover"
@@ -29,7 +30,7 @@ const Simplemail = () => {
         </div>
         <div className="mailimage">
           <Image
-            src="/images/mailpic.svg"
+            src={mailpic}
             alt="Mail Image"
             height={342}
             width={991}
