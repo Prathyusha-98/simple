@@ -151,6 +151,74 @@ body {
   border: solid 1px;
 }
 
+/* banner */
+
+.banner {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.banner .bimage {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/*Mail section */
+
+.mail {
+  height: 500px;
+}
+.mailtext h2 {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 61px;
+}
+.mailtext h2 span {
+  background: linear-gradient(18deg, #4ea0fb 0%, #9354f7 49.98%, #d70bf4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mailpara {
+  color: rgba(223, 223, 223, 0.8);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 8px;
+  letter-spacing: 0.5px;
+}
+
+.mailbutton {
+  width: 143px;
+  font-size: 16px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.mbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 17px;
+}
+.mailimage {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 10px;
+}
+
 /* Media Queries */
 
 @media (max-width: 640px) {
@@ -174,7 +242,10 @@ body {
     width: 98%;
   }
   .gif {
-    display: none;
+    margin-top: -420px;
+    margin-left: 200px;
+    height: 200px;
+    width: 100px;
   }
   .endlesstext {
     align-items: center;
@@ -204,5 +275,49 @@ body {
   .ebutton2 {
     width: 120px;
     font-size: 14px;
+  }
+  .banner {
+    height: 250px;
+  }
+  .mail {
+    height: 370px;
+  }
+  .mailtext h2 {
+    font-size: 25px;
+  }
+  .mailpara {
+    width: 50%;
+    margin: auto;
+  }
+  .mbutton {
+    padding-bottom: 6px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your tablet-specific CSS styles go here */
+  .gif {
+    display: none;
+  }
+  .endless {
+    font-size: 28px;
+    line-height: normal;
+    margin-top: 520px;
+    margin-left: 17px;
+  }
+  .endless-content {
+    font-size: 34px;
+    line-height: normal;
+    margin-top: 5px;
+    margin-left: 17px;
+    width: 50%;
+  }
+  .ebutton {
+    margin-left: 17px;
+    padding-top: 18px;
+  }
+
+  .banner {
+    height: 500px;
   }
 }
