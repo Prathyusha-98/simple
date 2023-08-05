@@ -22,11 +22,13 @@ body {
   width: 100%;
   background: #0D0037;
 }
+*/
+
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-} */
+  box-sizing: border-box;
+}
 
 /* Contact Section */
 
@@ -148,10 +150,10 @@ body {
   font-size: 16px;
   flex-shrink: 0;
   border-radius: 22px;
-  border: solid 1px;
+  border: solid 0.1px;
 }
 
-/* banner */
+/* Banner */
 
 .banner {
   max-width: 100%;
@@ -217,6 +219,67 @@ body {
   align-items: center;
   display: flex;
   padding-top: 10px;
+}
+
+/*SlideData Section */
+
+.slideimage {
+  width: 625px;
+  height: 355px;
+  margin-top: 229px;
+}
+
+.laptop {
+  display: flex;
+  margin-left: 88px;
+  margin-right: 727px;
+  margin-bottom: 191px;
+}
+
+.slidetext {
+  margin-top: 240px;
+}
+
+.slidetext h4 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.slidetext h2 {
+  padding-top: 24px;
+  width: 580px;
+  height: 111px;
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 34px;
+}
+
+.slidebutton1 {
+  width: 143px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.slidebutton2 {
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: solid #fff 0.7px;
+}
+.arrows {
+  padding-top: 55px;
+  cursor: pointer;
 }
 
 /* Media Queries */
@@ -292,6 +355,34 @@ body {
   .mbutton {
     padding-bottom: 6px;
   }
+  .slideimage {
+    width: 325px;
+    height: 355px;
+    margin-top: 130px;
+    align-items: center;
+    justify-content: center;
+  }
+  .slidetext {
+    margin-top: -50px;
+    padding-left: 0px;
+  }
+  .arrows {
+    position: absolute;
+    cursor: pointer;
+  }
+  .slidetext h2 {
+    font-size: 20px;
+    width: 250px;
+  }
+  .laptop {
+    margin-left: 30px;
+  }
+  .banner {
+    margin-top: -25px;
+  }
+  .slide {
+    margin-top: -15px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -319,5 +410,17 @@ body {
 
   .banner {
     height: 500px;
+  }
+  .slidetext {
+    margin-top: 50px;
+  }
+  .banner {
+    margin-top: -25px;
+  }
+  .story {
+    margin-top: -10px;
+  }
+  .slide {
+    margin-top: -15px;
   }
 }

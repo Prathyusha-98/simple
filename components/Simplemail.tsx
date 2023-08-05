@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Simplemail = () => {
   return (
-    <section className="relative">
+    <section className="relative mailsection">
       <div
         className="mail w-full h-0 relative "
         style={{ paddingBottom: "30%" }}
