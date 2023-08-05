@@ -1,12 +1,17 @@
 import React from "react";
 import Image from "next/image";
+import ContactBG from "../assets/bgcontact.svg"
+import Facebook from "../assets/facebook.svg"
+import Instagram from "../assets/instagram.svg"
+import Linkedin from "../assets/linkedin.svg"
+import Twitter from "../assets/twitter.svg"
 
 const contact = () => {
   return (
     <section className="contact bg-gray-200 min-h-screen relative">
       <div className="w-full h-full absolute inset-0">
         <Image
-          src="/images/bgcontact.svg"
+          src={ContactBG}
           alt="Hero Image"
           layout="fill"
           objectFit="cover"
@@ -87,8 +92,8 @@ const contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/facebook.svg"
+            <Image
+              src={Facebook}
               alt="Facebook"
               className="w-6 h-6"
             />
@@ -98,15 +103,15 @@ const contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/images/twitter.svg" alt="Twitter" className="w-6 h-6" />
+            <Image src={Twitter} alt="Twitter" className="w-6 h-6" />
           </a>
           <a
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/instagram.svg"
+            <Image
+              src={Instagram}
               alt="Instagram"
               className="w-6 h-6"
             />
@@ -116,8 +121,8 @@ const contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="/images/linkedin.svg"
+            <Image
+              src={Linkedin}
               alt="LinkedIn"
               className="w-6 h-6"
             />

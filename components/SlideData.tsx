@@ -2,6 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import { useState } from "react";
+import SlideBG from "../assets/slidebg.svg";
+import forward from "../assets/forward.svg";
+import backward from "../assets/backward.svg";
+import Laptop from "../assets/laptop.svg";
 
 const SlideData = () => {
   const textData = [
@@ -32,21 +36,11 @@ const SlideData = () => {
   return (
     <section className=" bg-gray-200 min-h-screen relative slide">
       <div className="slidebg w-full  absolute inset-0">
-        <Image
-          src="/images/slidebg.svg"
-          alt="Hero Image"
-          layout="fill"
-          objectFit="cover"
-        />
+        <Image src={SlideBG} alt="Hero Image" layout="fill" objectFit="cover" />
       </div>
       <div className="laptop absolute flex flex-col lg:flex-row">
         <div className="slideimage">
-          <Image
-            src="/images/laptop.svg"
-            alt="Laptop Image"
-            width={525}
-            height={355}
-          />
+          <Image src={Laptop} alt="Laptop Image" width={525} height={355} />
         </div>
 
         <div className="slidetext ">
@@ -61,7 +55,7 @@ const SlideData = () => {
 
           <div className="flex arrows">
             <Image
-              src="/images/backward.svg"
+              src={backward}
               alt="Backward Arrow"
               width={39}
               height={39}
@@ -69,7 +63,7 @@ const SlideData = () => {
               className="mr-4"
             />
             <Image
-              src="/images/forward.svg"
+              src={forward}
               alt="Forward Arrow"
               width={39}
               height={39}

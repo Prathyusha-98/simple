@@ -285,6 +285,8 @@ body {
 /* Media Queries */
 
 @media (max-width: 640px) {
+  
+  /* Mobile Specific Style Goes Here */
   .inputw {
     width: 100%;
   }
