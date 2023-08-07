@@ -5,7 +5,7 @@ import Facebook from "../assets/facebook.svg"
 import Instagram from "../assets/instagram.svg"
 import Linkedin from "../assets/linkedin.svg"
 import Twitter from "../assets/twitter.svg"
-
+import Link from 'next/link'
 const contact = () => {
   return (
     <div className="contact bg-gray-200 min-h-screen relative">
@@ -104,8 +104,8 @@ const contact = () => {
             rel="noopener noreferrer"
           >
             <Image src={Twitter} alt="Twitter" className="w-6 h-6" />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
