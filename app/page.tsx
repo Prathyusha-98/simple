@@ -5,6 +5,7 @@ import Contact from '../components/Contact'
 import EndlessStory from '@/components/EndlessStory'
 import Simplemail from '@/components/Simplemail'
 import Hero from '@/components/Hero'
+import SlideData from '@/components/SlideData'
 
 
 export default function Page() {
@@ -13,7 +14,8 @@ export default function Page() {
      <Hero/>  
      <Simplemail />
      <EndlessStory/>
-      <Banner/> 
+       <SlideData/>
+    <Banner/> 
       <Contact/>
     </>
   )

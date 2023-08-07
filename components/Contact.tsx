@@ -1,17 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import linkedin from "@/assets/linkedin.png"
-import twitter from "@/assets/twitter.png"
-import facebook from "@/assets/facebook.png"
-import instagram from "@/assets/instagram.png"
-import bgcontact from "@/assets/bgcontact.svg"
-import Link from 'next/link'
+import ContactBG from "../assets/bgcontact.svg"
+import Facebook from "../assets/facebook.svg"
+import Instagram from "../assets/instagram.svg"
+import Linkedin from "../assets/linkedin.svg"
+import Twitter from "../assets/twitter.svg"
+
 const contact = () => {
   return (
     <div className="contact bg-gray-200 min-h-screen relative">
       <div className="w-full h-full absolute inset-0">
         <Image
-          src={bgcontact}
+          src={ContactBG}
           alt="Hero Image"
           layout="fill"
           objectFit="cover"
@@ -93,7 +93,7 @@ const contact = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src={facebook}
+              src={Facebook}
               alt="Facebook"
               className="w-6 h-6"
             />
@@ -103,15 +103,15 @@ const contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src={twitter} alt="Twitter" className="w-6 h-6" />
-          </Link>
-          <Link
+            <Image src={Twitter} alt="Twitter" className="w-6 h-6" />
+          </a>
+          <a
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
-              src={instagram}
+              src={Instagram}
               alt="Instagram"
               className="w-6 h-6"
             />
@@ -122,7 +122,7 @@ const contact = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src={linkedin}
+              src={Linkedin}
               alt="LinkedIn"
               className="w-6 h-6"
             />

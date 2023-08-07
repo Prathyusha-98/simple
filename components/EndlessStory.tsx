@@ -1,14 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import endlessbgg from "@/assets/endlessbgg.svg"
-import man from "@/assets/man.svg"
-import story from "@/assets/story.gif"
+import StoryBG from "../assets/endlessbgg.svg"
+import StoryBook from "../assets/man.svg"
+import GIF from "../assets/story.gif"
+
 const EndlessStory = () => {
   return (
     <section className="story relative h-screen flex flex-col md:flex-row">
       <div className=" h-1/2 md:h-full relative flex-1">
         <Image
-          src={endlessbgg}
+          src={StoryBG}
           alt="Endless Story Image"
           layout="fill"
           objectFit="cover"
@@ -17,7 +18,7 @@ const EndlessStory = () => {
       </div>
       <div className=" relative flex-1 h-1/2 md:h-full">
         <Image
-          src={man}
+          src={StoryBook}
           alt="Reading Stories"
           layout="fill"
           objectFit="cover"
@@ -42,7 +43,7 @@ const EndlessStory = () => {
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
         <div className="relative">
           <Image
-            src={story}
+            src={GIF}
             alt="Story GIF"
             width={240}
             height={406}
