@@ -15,9 +15,9 @@ const SlideData = () => {
         "A game-changing app for precise, AI-powered multilingual communication",
     },
     {
-      title: "SimpleMail",
+      title: "Simplymeet",
       description:
-        "A mail app for precise, AI-powered multilingual communication",
+        "A powerhouse web application empowering users to excel in writing, learning, and presenting.",
     },
   ];
 
@@ -34,11 +34,19 @@ const SlideData = () => {
   const currentSlide = textData[currentIndex];
 
   return (
-    <section className=" bg-gray-200 min-h-screen relative slide">
+    <section className=" bg-gray-200 min-h-screen relative slide" style={{paddingBottom:"35%"}}>
       <div className="slidebg w-full  absolute inset-0">
         <Image src={SlideBG} alt="Hero Image" layout="fill" objectFit="cover" />
       </div>
+    
+      
+      
       <div className="laptop absolute flex flex-col lg:flex-row">
+      <div className="mobile-title">
+    
+            <h4>{currentSlide.title}</h4>
+          </div>
+    
         <div className="slideimage">
           <Image src={Laptop} alt="Laptop Image" width={525} height={355} />
         </div>
@@ -46,7 +54,17 @@ const SlideData = () => {
         <div className="slidetext ">
           <div id="textContainer">
             <h4>{currentSlide.title}</h4>
-            <h2>{currentSlide.description}</h2>
+
+            <h2>{currentSlide.description.split(' ').map((word, wordIndex)=> word.toLowerCase() === 'multilingual'? (
+              <span key={wordIndex} className="highlight">
+                {word}{' '}
+              </span>
+
+            ): 
+            (
+              <span key={wordIndex}>{word} </span>
+            )
+            )}</h2>
             <div className="slidebutton text-white ">
               <button className="slidebutton1 mr-4">Try For Free</button>
               <button className="slidebutton2">Learn More</button>

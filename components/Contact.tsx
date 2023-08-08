@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ContactBG from "../assets/bgcontact.svg"
-import Facebook from "../assets/facebook.svg"
+import Youtube from "../assets/youtube.svg"
 import Instagram from "../assets/instagram.svg"
 import Linkedin from "../assets/linkedin.svg"
 import Twitter from "../assets/twitter.svg"
@@ -9,17 +9,17 @@ import Link from 'next/link'
 const contact = () => {
   return (
     <div className="contact bg-gray-200 min-h-screen relative">
-      <div className="w-full h-full absolute inset-0">
+      <div className="w-full h-full absolute inset-0 contactbg">
         <Image
           src={ContactBG}
-          alt="Hero Image"
+          alt="Contact"
           layout="fill"
           objectFit="cover"
         />
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="text-white max-w-lg text-center pt-10">
+        <div className="text-white max-w-lg text-center pt-10 contacttexts">
           <p className="text-4xl font-normal">Let`&apos;`s Talk</p>
           <p className=" pt-4 csubheading">
             Start simplifying your life with Simple AI today!
@@ -88,13 +88,13 @@ const contact = () => {
         </div>
         <div className=" flex justify-center items-center space-x-4 pt-8">
           <Link
-            href="https://www.facebook.com/"
+            href="https://www.youtube.com/@simpleai2403"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
-              src={Facebook}
-              alt="Facebook"
+              src={Youtube}
+              alt="Youtube"
               className="w-6 h-6"
             />
           </Link>
@@ -117,7 +117,7 @@ const contact = () => {
             />
           </Link>
           <Link
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/company/simple-ai-powered/"
             target="_blank"
             rel="noopener noreferrer"
           >
