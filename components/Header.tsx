@@ -15,7 +15,7 @@ export default function Header() {
           <Link href="/">
             <button className="text-white hover:font-bold px-4 py-2 rounded-md">Home</button>
           </Link>
-          <Link href="/About">
+          <Link href="/about">
             <button className="text-white hover:font-bold  px-4 py-2 rounded-md">About Us</button>
           </Link>
           <Link href="/contact">
