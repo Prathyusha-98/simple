@@ -6,9 +6,11 @@ import Instagram from "../assets/instagram.svg"
 import Linkedin from "../assets/linkedin.svg"
 import Twitter from "../assets/twitter.svg"
 import Link from 'next/link'
+import HeaderMobile from "../components/HeaderMobile";
+import Header from '../components/Header'
 const contact = () => {
   return (
-    <div className="contact bg-gray-200 min-h-screen relative">
+    <div className="contact bg-gray-200 h-[1257px] relative">
       <div className="w-full h-full absolute inset-0 contactbg">
         <Image
           src={ContactBG}
@@ -19,8 +21,10 @@ const contact = () => {
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <Header/>
+        <HeaderMobile/>
         <div className="text-white max-w-lg text-center pt-10 contacttexts">
-          <p className="text-4xl font-normal">Let`&apos;`s Talk</p>
+          <p className="text-4xl font-normal">Let&apos;s Talk</p>
           <p className=" pt-4 csubheading">
             Start simplifying your life with Simple AI today!
           </p>

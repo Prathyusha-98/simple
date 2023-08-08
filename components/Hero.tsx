@@ -15,6 +15,11 @@ import Unimobile from './Unimobile'
 import Neetmobile from './Neetmobile'
 import Mail from './Mail'
 import HeaderMobile from './HeaderMobile'
+import Simplemail from './Simplemail'
+import EndlessStory from './EndlessStory'
+import SlideData from './SlideData'
+import Banner from './Banner'
+import Contact from './Contact'
 
 const Hero =() =>{
 
@@ -100,6 +105,11 @@ const Hero =() =>{
     <Neetmobile/>
 
     <Mail/>
+    <Simplemail />
+    <EndlessStory/>
+    <SlideData/>
+    <Banner/> 
+    <Contact/>
 
 
 

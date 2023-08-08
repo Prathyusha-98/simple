@@ -55,7 +55,7 @@ const SlideData = () => {
           <div id="textContainer">
             <h4>{currentSlide.title}</h4>
 
-            <h2>{currentSlide.description.split(' ').map((word, wordIndex)=> word.toLowerCase() === 'multilingual'? (
+            <h2 >{currentSlide.description.split(' ').map((word, wordIndex)=> word.toLowerCase() === 'multilingual'? (
               <span key={wordIndex} className="highlight">
                 {word}{' '}
               </span>
