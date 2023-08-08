@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import learn from '@/assets/learn.png'
+import write from "@/assets/write.png"
+import present from "@/assets/present.png"
 import blue from '@/assets/blue.png'
 import arrow from '@/assets/arrow.png'
 import logo from '@/assets/logo.png'
@@ -27,7 +29,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='' src={learn} alt='Learn' />
+      <Image className='' src={write} alt='Learn' />
       </div>
     </div>
     </>
@@ -77,7 +79,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='' src={learn} alt='Learn' />
+      <Image className='' src={present} alt='Learn' />
       </div>
     </div>
     </>
@@ -87,7 +89,7 @@ export default function Uni() {
     <div className='relative'>
       <Image className='w-full 1xl:h-[772px] xl:h-[772px]' src={blue} alt='' />
       <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col'>
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center mb-12'>
           <button onClick={() => setSelected('write')} className=' ml-[380px] mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] bg-[rgba(255,255,255,0.2)] '>
             <p className='text-gray-300 text-opacity-70 font-poppins text-xs font-normal leading-normal'>Simple Write</p>
           </button>
