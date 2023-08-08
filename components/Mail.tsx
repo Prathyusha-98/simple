@@ -6,10 +6,10 @@ import arrow from '@/assets/arrow.png'
 import hand from '@/assets/hand.png'
 import handmobile from '@/assets/handmobile.png'
 const sections = [
-    { title: 'AI email Generation', text: 'Lorem ipsum dolor sit amet consectetur. Tellus massa dictumst adipiscing' },
-    { title: 'AI Reply', text: 'Lorem ipsum dolor sit amet consectetur. Tellus massa dictumst adipiscing' },
-    { title: 'AI Summarizee', text: 'Lorem ipsum dolor sit amet consectetur. Tellus massa dictumst adipiscing' },
-    { title: 'Unread Snaps', text: 'Lorem ipsum dolor sit amet consectetur. Tellus massa dictumst adipiscing' },
+    { title: 'AI Compose from points', text: 'Write professional emails from notes. You get work done in only 20% of normal time.' },
+    { title: 'AI Reply', text: 'Taking auto reply to the next level. AI choose right words for you depending on your input and the situation.' },
+    { title: 'AI Summarizee', text: 'Summarize large emails into points, precisely!' },
+    { title: 'Unread Snaps', text: 'Quickly get the overall summary of all Un-read mails at the click of the button' },
   ];
 const Mail = () => {
     return(
@@ -19,7 +19,7 @@ const Mail = () => {
       <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center'>
         <div className='flex justify-center items-center'>
             
-            <div className='mr-[535px] mb-[355px]'>
+            <div className='1xl:mr-[535px] 1xl:mb-[355px] xl:mr-[435px] xl:mb-[355px]'>
                 <div className='flex '><p className='text-white font-poppins text-lg font-medium leading-normal'>Simplemail</p></div>
                 <div className='flex justify-center items-center my-[26px] '><p className='w-[322px] h-[111px] text-white font-montserrat text-[30px] font-extrabold leading-normal'>AI powered E-mail App for <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4]'>quicker</span> & <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4]'>easy </span>response</p></div>
                 <div className="flex items-center">
@@ -32,10 +32,10 @@ const Mail = () => {
             {sections.map((section) => (
             <>
                 <div className='flex'>
-                <p className='text-white font-poppins text-lg font-medium w-[180px] h-[27px] mb-[12px]'>{section.title}</p>
+                <p className='text-white font-poppins text-lg font-medium 1xl:w-[180px] 1xl:h-[27px] xl:w-[280px] xl:h-[27px] mb-[12px] leading-normal'>{section.title}</p>
                 </div>
-                <div>
-                <p className='text-gray-400 font-poppins text-lg font-normal w-[382px] h-[54px] mb-4'>{section.text}</p>
+                <div className='mb-16'>
+                <p className='text-gray-400 font-poppins text-base font-normal 1xl:w-[382px] 1xl:h-[54px] xl:w-[280px] xl:h-[47px] mb-4 leading-8'>{section.text}</p>
                 </div>
             </>
             ))} 

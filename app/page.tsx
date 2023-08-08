@@ -13,7 +13,7 @@ export default function Page() {
     <>
      <Hero/>  
      <Simplemail />
-     <EndlessStory/>
+     < EndlessStory/>
        <SlideData/>
     <Banner/> 
       <Contact/>
