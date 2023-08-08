@@ -14,6 +14,8 @@ import Uni from './Uni'
 import Unimobile from './Unimobile'
 import Neetmobile from './Neetmobile'
 import Mail from './Mail'
+import HeaderMobile from './HeaderMobile'
+
 const Hero =() =>{
 
     return (
@@ -22,7 +24,8 @@ const Hero =() =>{
       <Image className='w-full 1xl:h-[960px] xl:h-[563px] sm:h-[600px] xs:h-[700px] sm:w-full' src={screen} alt='' />
       <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center'>
 
-        <div className='lg:block sm:hidden xs:hidden mb-24'><Header/></div>
+        <Header/>
+        <HeaderMobile/>
 
         <div className='flex justify-center items-center '>
           <p className='1xl:w-[737px] sm:w-[443px] sm:h-[114px] xs:w-[283px] xs:h-[114px] text-[#fff] text-center font-montserrat 1xl:text-[45px] sm:text-[30px] xs:text-[25px] font-extrabold leading-normal '>Empowering You to <span className='text-transparent bg-clip-text bg-gradient-to-b to-[#3A07E1] from-[#A010E0]' >Excel</span> and Live <span className='text-transparent bg-clip-text bg-gradient-to-b to-[#3A07E1] from-[#A010E0]'>Better</span> Lives</p>

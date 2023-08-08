@@ -1,10 +1,30 @@
-import Link from 'next/link';
-import logo from '@/assets/logo.png';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import logo from '@/assets/logo.png';
+
 
 export default function Header() {
+
+  const [openmenu, setOpenmenu] = useState(false);
+
+  useEffect(() => {
+    const handleClick = (e: any) => {
+      if (openmenu) {
+        setOpenmenu(false);
+      }
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, [openmenu]);
   return (
-    <header className="flex justify-between items-center px-8 bg-transparent">
+    <>
+        <header className="flex justify-between items-center px-8 bg-transparent sm:hidden xs:hidden lg:block">
       <div className="flex items-center">
         <Link href="/">
           <button>
@@ -32,5 +52,8 @@ export default function Header() {
         </Link>
       </div>*/}
     </header>
+
+    </>
+     
   );
 }

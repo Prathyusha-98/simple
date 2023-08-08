@@ -16,6 +16,7 @@ import prabakar from '@/assets/prabakar.png';
 import sonu from '@/assets/sonu.png'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import HeaderMobile from './HeaderMobile';
 const About = () => {
   const responsive = {
     superLargeDesktop: {
@@ -43,7 +44,7 @@ const About = () => {
           <Header />
         </div>
 
-        <div className="about-text">
+        <div className="about-text ">
           <h1>Simple AI Enterprise</h1>
           <h4>Empowering AI Application Specialists</h4>
           <div className="about-content-title">

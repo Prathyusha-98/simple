@@ -20,7 +20,7 @@ const contact = () => {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="text-white max-w-lg text-center pt-10">
-          <p className="text-4xl font-normal">Let's Talk</p>
+          <p className="text-4xl font-normal">Let`&apos;`s Talk</p>
           <p className=" pt-4 csubheading">
             Start simplifying your life with Simple AI today!
           </p>
