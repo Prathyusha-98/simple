@@ -92,6 +92,11 @@ body {
 
 /* Story Section */
 
+.story{
+  height: 733px;
+
+}
+
 .bg-image {
   position: absolute;
   top: 0;
@@ -631,6 +636,11 @@ line-height: normal;
   }
   .storybg{
     background: linear-gradient(180deg, #240241 0%, #200240 100%);
+    
+  }
+  .story{
+    height: 820px;
+  
   }
 }
 
@@ -639,22 +649,34 @@ line-height: normal;
   .gif {
     display: none;
   }
-  .endless {
+  .endless, .endless-content{
+    margin-left: 17px ;
+    padding-top: 18px;
+
+  }
+  .endless-content{
+    width: 85%;
+  }
+
+ 
+  
+  /* .endless {
     font-size: 28px;
     line-height: normal;
     margin-top: 520px;
     margin-left: 17px;
-  }
-  .endless-content {
+  } */
+  /* .endless-content {
     font-size: 34px;
     line-height: normal;
     margin-top: 5px;
     margin-left: 17px;
     width: 50%;
-  }
+  } */
   .ebutton {
     margin-left: 17px;
     padding-top: 18px;
+   
   }
 
   .banner {
@@ -663,6 +685,7 @@ line-height: normal;
   .slide {
     background: #2a0444;
   }
+  
 }
 
 .underline::after {
@@ -681,5 +704,8 @@ line-height: normal;
   } */
   .contacttextbox {
     display: none;
+  }
+  .story{
+    height: 850px;
   }
 }
