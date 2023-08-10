@@ -29,7 +29,15 @@ body {
 }
 
 /* Contact Section */
-
+.learnmore {
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: solid #fff 0.7px;
+}
 .csubheading {
   color: #d6d6d6;
   font-size: 14px;
@@ -256,7 +264,7 @@ body {
 }
 .slidetext h2 {
   padding-top: 24px;
-  width: 580px;
+  width: 480px;
   height: 111px;
   color: #fff;
   font-size: 30px;
