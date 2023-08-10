@@ -28,8 +28,8 @@ body {
   border: 0;
 }
 
-/* Contact Section */
-.learnmore {
+
+/* .learnmore {
   align-items: center;
   justify-content: center;
   width: 130px;
@@ -37,7 +37,20 @@ body {
   flex-shrink: 0;
   border-radius: 22px;
   border: solid #fff 0.7px;
+} */
+
+.ubutton{
+  padding-top: 32px;
+  margin-left:-7px;
 }
+/* Contact Section */
+
+.contact{
+  height:750px;
+  /* margin-top: -4px; */
+}
+
+
 .csubheading {
   color: #d6d6d6;
   font-size: 14px;
@@ -102,8 +115,11 @@ body {
 
 .story{
   height: 733px;
+  margin-top:-4px;
 
 }
+
+
 
 .bg-image {
   position: absolute;
@@ -122,13 +138,13 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 434px;
+  margin-top: 410px;
   margin-left: 88px;
 }
 .endless-content {
-  width: 480px;
+  width: 450px;
   color: #dfdfdf;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -167,6 +183,8 @@ body {
   border: solid 0.1px;
 }
 
+
+
 /* Banner */
 
 .banner {
@@ -184,6 +202,7 @@ body {
 
 .mail {
   height: 500px;
+  margin-top:-4px;
 }
 .mailtext h2 {
   color: #fff;
@@ -237,10 +256,18 @@ body {
 
 /*SlideData Section */
 
+.slide{
+  height: 680px;
+  margin-top: -2px;
+  
+
+}
+
 .slideimage {
   width: 625px;
   height: 355px;
   margin-top: 229px;
+  margin-left: 40px;
 }
 
 .laptop {
@@ -252,6 +279,7 @@ body {
 
 .slidetext {
   margin-top: 240px;
+  padding-left: 40px;
 }
 
 .slidetext h4 {
@@ -271,7 +299,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 34px;
+  margin-bottom: 64px;
 }
 
 .slidebutton1 {
@@ -390,6 +418,8 @@ body {
 }
 .mobile-title {
   display: none;
+  padding-top: 50px;
+  font-size: 18px;
 }
 
 .highlight{
@@ -397,10 +427,7 @@ body {
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-
 font-size: 30px;
-font-style: normal;
-font-weight: 700;
 line-height: normal;
 }
 /* Media Queries */
@@ -415,6 +442,7 @@ line-height: normal;
     align-items: center;
     display: flex;
     margin-right: auto;
+   
   }
   form {
     display: flex;
@@ -476,6 +504,8 @@ line-height: normal;
   .ebutton {
     margin-left: 0px;
     padding-top: 18px;
+    margin-bottom: 20px;
+    
 
   }
   .ebutton1,
@@ -487,7 +517,8 @@ line-height: normal;
     height: 250px;
   }
   .mail {
-    height: 310px;
+    height: 320px;
+    
   }
   .mailtext h2 {
     font-size: 25px;
@@ -500,11 +531,11 @@ line-height: normal;
     padding-bottom: 6px;
   }
   .slideimage {
-    width: 325px;
+    width: 335px;
     height: 355px;
     margin-top: 90px;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
   }
   .slidetext h4 {
     color: #fff;
@@ -516,12 +547,11 @@ line-height: normal;
   }
 
   .slidetext {
-    margin-top: -70px;
-    padding-left: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   .arrows {
     /* position: absolute; */
@@ -535,19 +565,28 @@ line-height: normal;
     width: 300px;
     text-align: center;
     letter-spacing: 1px;
+    margin-left: 0;
+  }
+  .highlight{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
   }
   .slidetext h4 {
     display: none;
   }
 
   .laptop {
-    margin-left: 30px;
+    margin: auto;
+    margin-left: -10px;
+    padding-top: 40px;    
   }
   .banner {
     margin-top: -25px;
   }
   .slide {
     margin-top: -15px;
+    background: #2a0444;
   }
   .about-content {
     width: 90%;
@@ -584,15 +623,12 @@ line-height: normal;
     justify-content: center;
     align-items: center;
   }
-  .slide {
-    background: #2a0444;
-  }
 
   .banner-container h3 {
     padding-top: 56px;
     color: #fff;
     text-align: center;
-    font-family: Montserrat;
+    font-family: Poppins;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
@@ -630,7 +666,7 @@ line-height: normal;
     justify-content: center;
   }
   .mobile-title h4 {
-    padding-top: 40px;
+    margin-left: 35px;
     color: #fff;
     text-align: center;
     font-family: Poppins;
@@ -644,11 +680,16 @@ line-height: normal;
   }
   .storybg{
     background: linear-gradient(180deg, #240241 0%, #200240 100%);
+    margin-top: -2px;
+    
     
   }
   .story{
     height: 820px;
   
+  }
+  .contact{
+    height: 900px;
   }
 }
 
@@ -692,6 +733,17 @@ line-height: normal;
   }
   .slide {
     background: #2a0444;
+    
+  }
+  .slidetext{
+    margin-top: 20px;
+  }
+  .mail {
+    height: 420px;
+    
+  }
+  .mailimage{
+    padding-top: 5px;
   }
   
 }
@@ -706,14 +758,21 @@ line-height: normal;
 }
 
 @media only screen and (max-width: 380px) {
-  /* .contacttexts{
-    /* padding-top: 120px; 
-    overflow: auto;
-  } */
-  .contacttextbox {
-    display: none;
-  }
+  
   .story{
     height: 850px;
   }
+ .inputm{
+  width: 75%;
+ }
+ .slide{
+  height: 800px
+ }
+ .slideimage{
+  margin-left: 25px;
+  
+ }
+ .slidetext{
+  margin-left: 12px;
+ }
 }

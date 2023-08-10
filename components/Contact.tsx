@@ -31,35 +31,35 @@ const contact = () => {
         </div>
         <div className="pt-12 flex">
           <form action="#" method="post" id="myForm" className="text-white ">
-            <label htmlFor="">
+            <label htmlFor="" className="">
               <input
                 type="email"
                 name=""
                 placeholder="Your Email"
                 required
-                className="inputw "
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
               />
               <span></span>
             </label>
             <br />
-            <br />
+            
             <label htmlFor="">
               <input
                 type="text"
                 name=""
                 required
-                className="inputw"
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
                 placeholder="Name"
               />
               <span></span>
             </label>
             <br />
-            <br />
+            
             <label htmlFor="">
               <textarea
                 rows={6}
-                cols={50}
-                className="inputm resize-none inputw"
+                cols={40}
+                className="inputm resize-none inputw sm:mb-0 xs:mb-0"
                 placeholder="
             Message"
                 required

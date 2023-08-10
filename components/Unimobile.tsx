@@ -74,13 +74,13 @@ const Unimobile = ()=>{
             {selected === 'present' && presentContent}
           </div>
           </div>
-          <div className="flex items-center mb-24 mt-6">
-            <Link className='mr-2' href="/">
-            <button className="w-[143px] h-[44px] flex-shrink-0 rounded-[22px] bg-[rgba(255,255,255,0.2)]"><p className='text-white text-center font-montserrat text-base font-medium leading-normal'>Try For Free</p></button>
-            </Link>
-            <Link className='ml-2' href="/">
-            <button className="w-[130px] h-[44px] flex-shrink-0 rounded-[22px] border border-[rgba(255,255,255,0.7)]"><p className='text-white text-center font-montserrat text-base font-medium leading-normal'>Learn More</p></button>
-            </Link>
+          <div className="flex ubutton mt-6 mb-24">
+            <button className=" ebutton1  text-white rounded-md mr-4">
+              Try For Free
+            </button>
+            <button className="ebutton2 text-white rounded-md">
+              Learn More
+            </button>
           </div>
 
         </div>
