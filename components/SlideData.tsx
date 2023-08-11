@@ -53,7 +53,7 @@ const SlideData = () => {
 
         <div className="slidetext ">
           <div id="textContainer">
-            <h4>{currentSlide.title}</h4>
+            <h4 className="font-poppins">{currentSlide.title}</h4>
 
             <h2 >
               {currentSlide.description.split(' ').map((word, wordIndex) => {
