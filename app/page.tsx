@@ -12,11 +12,6 @@ export default function Page() {
   return (
     <>
      <Hero/>  
-     <Simplemail />
-     < EndlessStory/>
-       <SlideData/>
-    <Banner/> 
-      <Contact/>
     </>
   )
 }

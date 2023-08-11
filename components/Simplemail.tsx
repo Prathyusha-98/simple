@@ -17,8 +17,8 @@ const Simplemail = () => {
           objectFit="cover"
         />
       </div>
-
-      <div className="mailtext absolute top-0 left-0 w-full h-full flex flex-col items-centerjustify-center">
+ 
+      <div className="mailtext absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
         <h2 className="text-white text-center">
           Also try our <span>Simplemail</span> extension for Gmail
         </h2>
@@ -29,7 +29,7 @@ const Simplemail = () => {
           {" "}
           <button className="mailbutton">Try For Free</button>
         </div>
-        <div className="mailimage">
+        <div className="mailimage sm:pt-5 xs:pt-5 sm:pl-3 xs:pl-3 xs:pr-3 sm:pr-3">
           <Image
             src={mailpic}
             alt="Mail Image"

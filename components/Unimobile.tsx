@@ -57,13 +57,13 @@ const Unimobile = ()=>{
           <div className='pb-12' ><p className='text-gray-300 text-lg font-normal leading-normal text-center font-poppins'>Simple Uni</p></div>
           <div className='pb-12 w-[294px]'><p className='text-gray-300 text-xs font-normal leading-normal text-center font-poppins'>A powerhouse web application empowering users to excel in writing, learning, and presenting.</p></div>
           <div className='flex  justify-center items-center mb-6'>
-            <button onClick={() => setSelected('write')} className='  mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] bg-[rgba(255,255,255,0.2)] '>
+            <button onClick={() => setSelected('write')} className={`mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] ${selected === 'learn' ? 'bg-[rgba(255,255,255,0.2)]' : ' '}   hover:bg-[rgba(255,255,255,0.2)]`}>
               <p className='text-gray-300 text-opacity-70 font-poppins text-xs font-normal leading-normal'>Simple Write</p>
             </button>
-            <button onClick={() => setSelected('learn')} className='mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] bg-[rgba(255,255,255,0.2)] '>
+            <button onClick={() => setSelected('learn')} className={`mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] ${selected === 'learn' ? 'bg-[rgba(255,255,255,0.2)]' : ' '}   hover:bg-[rgba(255,255,255,0.2)]`}>
               <p className='text-gray-300 text-opacity-70 font-poppins text-xs font-normal leading-normal'>Simple Learn</p>
             </button>
-            <button onClick={() => setSelected('present')} className='w-[110px] h-[29px] flex-shrink-0 rounded-[4px] bg-[rgba(255,255,255,0.2)] '>
+            <button onClick={() => setSelected('present')} className={`mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] ${selected === 'learn' ? 'bg-[rgba(255,255,255,0.2)]' : ' '}   hover:bg-[rgba(255,255,255,0.2)]`}>
               <p className='text-gray-300 text-opacity-70 font-poppins text-xs font-normal leading-normal'>Simple Present</p>
             </button>
           </div>
@@ -74,13 +74,13 @@ const Unimobile = ()=>{
             {selected === 'present' && presentContent}
           </div>
           </div>
-          <div className="flex items-center mb-24 mt-6">
-            <Link className='mr-2' href="/">
-            <button className="w-[143px] h-[44px] flex-shrink-0 rounded-[22px] bg-[rgba(255,255,255,0.2)]"><p className='text-white text-center font-montserrat text-base font-medium leading-normal'>Try For Free</p></button>
-            </Link>
-            <Link className='ml-2' href="/">
-            <button className="w-[130px] h-[44px] flex-shrink-0 rounded-[22px] border border-[rgba(255,255,255,0.7)]"><p className='text-white text-center font-montserrat text-base font-medium leading-normal'>Learn More</p></button>
-            </Link>
+          <div className="flex ubutton mt-6 mb-24">
+            <button className=" ebutton1  text-white rounded-md mr-4">
+              Try For Free
+            </button>
+            <button className="ebutton2 text-white rounded-md">
+              Learn More
+            </button>
           </div>
 
         </div>

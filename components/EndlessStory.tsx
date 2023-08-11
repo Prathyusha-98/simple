@@ -7,6 +7,7 @@ import GIF from "../assets/story.gif";
 
 const EndlessStory = () => {
   return (
+   <>
     <section className="story relative h-screen flex flex-col md:flex-row">
       <div className=" relative flex-1 h-1/2 md:h-full md:hidden lg:hidden">
         <Image
@@ -14,11 +15,11 @@ const EndlessStory = () => {
           alt="Reading Stories"
           layout="fill"
           objectFit="cover"
-          className=" m-0 p-0"
+          className=" m-0 p-0 "
         />
       </div>
 
-      <div className="storybg md:h-full relative flex-1 ">
+      <div className="storybg xl:h-full md:h-full relative flex-1 ">
         <Image
           src={StoryBG}
           alt="Endless Story Image"
@@ -27,9 +28,9 @@ const EndlessStory = () => {
           className="m-0 p-0"
         />
 
-        <div className="absolute endlesstext">
-          <div className="endless">Endless Stories</div>
-          <div className="endless-content">
+        <div className="absolute endlesstext ">
+          <div className="endless font-poppins">Endless Stories</div>
+          <div className="endless-content font-poppins">
             Inspire <span>creativity</span> in kids and foster interactive,
             educational moments for families.
           </div>
@@ -65,6 +66,7 @@ const EndlessStory = () => {
         </div>
       </div>
     </section>
+   </>
   );
 };
 

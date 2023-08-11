@@ -28,7 +28,26 @@ body {
   border: 0;
 }
 
+/* .learnmore {
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: solid #fff 0.7px;
+} */
+
+.ubutton {
+  padding-top: 32px;
+  margin-left: -7px;
+}
 /* Contact Section */
+
+.contact {
+  height: 750px;
+  /* margin-top: -4px; */
+}
 
 .csubheading {
   color: #d6d6d6;
@@ -92,6 +111,11 @@ body {
 
 /* Story Section */
 
+.story {
+  height: 733px;
+  margin-top: -4px;
+}
+
 .bg-image {
   position: absolute;
   top: 0;
@@ -109,13 +133,13 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-top: 434px;
+  margin-top: 410px;
   margin-left: 88px;
 }
 .endless-content {
-  width: 480px;
+  width: 450px;
   color: #dfdfdf;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -159,6 +183,26 @@ body {
 .banner {
   max-width: 100%;
   overflow: hidden;
+  height: 600px;
+  margin-top: -6px;
+}
+
+/* .banner-text{
+  padding-top: 34px;
+}
+.element1{
+  margin: 100px;
+  margin-left: 250px;
+  
+} */
+
+.banner-heading {
+  color: #fff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: auto;
 }
 
 .banner .bimage {
@@ -171,6 +215,7 @@ body {
 
 .mail {
   height: 500px;
+  margin-top: -4px;
 }
 .mailtext h2 {
   color: #fff;
@@ -224,10 +269,16 @@ body {
 
 /*SlideData Section */
 
+.slide {
+  height: 770px;
+  margin-top: -2px;
+}
+
 .slideimage {
   width: 625px;
   height: 355px;
   margin-top: 229px;
+  /* margin-left: 40px; */
 }
 
 .laptop {
@@ -239,6 +290,7 @@ body {
 
 .slidetext {
   margin-top: 240px;
+  padding-left: 40px;
 }
 
 .slidetext h4 {
@@ -251,14 +303,14 @@ body {
 }
 .slidetext h2 {
   padding-top: 24px;
-  width: 580px;
+  width: 480px;
   height: 111px;
   color: #fff;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-bottom: 34px;
+  margin-bottom: 64px;
 }
 
 .slidebutton1 {
@@ -377,18 +429,17 @@ body {
 }
 .mobile-title {
   display: none;
+  padding-top: 50px;
+  font-size: 18px;
 }
 
-.highlight{
-  background: linear-gradient(56deg, #4EA0FB 0%, #9354F7 49.98%, #D70BF4 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
-font-size: 30px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.highlight {
+  background: linear-gradient(56deg, #4ea0fb 0%, #9354f7 49.98%, #d70bf4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  line-height: normal;
 }
 /* Media Queries */
 
@@ -435,7 +486,7 @@ line-height: normal;
     height: 308px;
   }
   .endlesstext {
-    height:369px;
+    height: 369px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -448,7 +499,7 @@ line-height: normal;
     font-size: 18px;
     line-height: normal;
     margin-top: 220px;
-     margin-left: 0px;
+    margin-left: 0px;
   }
   .endless-content {
     font-size: 20px;
@@ -463,7 +514,7 @@ line-height: normal;
   .ebutton {
     margin-left: 0px;
     padding-top: 18px;
-
+    margin-bottom: 20px;
   }
   .ebutton1,
   .ebutton2 {
@@ -474,24 +525,28 @@ line-height: normal;
     height: 250px;
   }
   .mail {
-    height: 310px;
+    height: 320px;
   }
   .mailtext h2 {
     font-size: 25px;
   }
   .mailpara {
     display: none;
-
   }
   .mbutton {
     padding-bottom: 6px;
   }
   .slideimage {
-    width: 325px;
+    width: 335px;
     height: 355px;
     margin-top: 90px;
     align-items: center;
     justify-content: center;
+    margin-left: 40px;
+  }
+
+  h4 {
+    font-family: Poppins;
   }
   .slidetext h4 {
     color: #fff;
@@ -503,12 +558,10 @@ line-height: normal;
   }
 
   .slidetext {
-    margin-top: -70px;
-    padding-left: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   .arrows {
     /* position: absolute; */
@@ -522,19 +575,28 @@ line-height: normal;
     width: 300px;
     text-align: center;
     letter-spacing: 1px;
+    margin-left: 0;
+  }
+  .highlight {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
   }
   .slidetext h4 {
     display: none;
   }
 
   .laptop {
-    margin-left: 30px;
+    margin: auto;
+    margin-left: -10px;
+    padding-top: 40px;
   }
   .banner {
     margin-top: -25px;
   }
   .slide {
     margin-top: -15px;
+    background: #2a0444;
   }
   .about-content {
     width: 90%;
@@ -571,15 +633,11 @@ line-height: normal;
     justify-content: center;
     align-items: center;
   }
-  .slide {
-    background: #2a0444;
-  }
 
   .banner-container h3 {
     padding-top: 56px;
     color: #fff;
     text-align: center;
-    font-family: Montserrat;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
@@ -589,7 +647,7 @@ line-height: normal;
   .element h4 {
     color: #f4f0ff;
     text-align: center;
-    font-family: Poppins;
+    /* font-family: Poppins; */
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -599,7 +657,7 @@ line-height: normal;
   .element h5 {
     color: rgba(239, 237, 253, 0.7);
     text-align: center;
-    font-family: Poppins;
+    /* font-family: Poppins; */
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -617,20 +675,26 @@ line-height: normal;
     justify-content: center;
   }
   .mobile-title h4 {
-    padding-top: 40px;
+    margin-left: 35px;
     color: #fff;
     text-align: center;
-    font-family: Poppins;
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
-  .stories{
+  .stories {
     display: none;
   }
-  .storybg{
+  .storybg {
     background: linear-gradient(180deg, #240241 0%, #200240 100%);
+    margin-top: -2px;
+  }
+  .story {
+    height: 820px;
+  }
+  .contact {
+    height: 900px;
   }
 }
 
@@ -639,19 +703,28 @@ line-height: normal;
   .gif {
     display: none;
   }
-  .endless {
+  .endless,
+  .endless-content {
+    margin-left: 17px;
+    padding-top: 18px;
+  }
+  .endless-content {
+    width: 85%;
+  }
+
+  /* .endless {
     font-size: 28px;
     line-height: normal;
     margin-top: 520px;
     margin-left: 17px;
-  }
-  .endless-content {
+  } */
+  /* .endless-content {
     font-size: 34px;
     line-height: normal;
     margin-top: 5px;
     margin-left: 17px;
     width: 50%;
-  }
+  } */
   .ebutton {
     margin-left: 17px;
     padding-top: 18px;
@@ -662,6 +735,15 @@ line-height: normal;
   }
   .slide {
     background: #2a0444;
+  }
+  .slidetext {
+    margin-top: 20px;
+  }
+  .mail {
+    height: 420px;
+  }
+  .mailimage {
+    padding-top: 5px;
   }
 }
 
@@ -675,11 +757,19 @@ line-height: normal;
 }
 
 @media only screen and (max-width: 380px) {
-  /* .contacttexts{
-    /* padding-top: 120px; 
-    overflow: auto;
-  } */
-  .contacttextbox {
-    display: none;
+  .story {
+    height: 850px;
+  }
+  .inputm {
+    width: 75%;
+  }
+  .slide {
+    height: 800px;
+  }
+  .slideimage {
+    margin-left: 25px;
+  }
+  .slidetext {
+    margin-left: 12px;
   }
 }

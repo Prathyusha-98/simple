@@ -6,9 +6,11 @@ import Instagram from "../assets/instagram.svg"
 import Linkedin from "../assets/linkedin.svg"
 import Twitter from "../assets/twitter.svg"
 import Link from 'next/link'
+import HeaderMobile from "../components/HeaderMobile";
+import Header from './Header'
 const contact = () => {
   return (
-    <div className="contact bg-gray-200 min-h-screen relative">
+    <div className=" bg-gray-200 h-[1257px] relative">
       <div className="w-full h-full absolute inset-0 contactbg">
         <Image
           src={ContactBG}
@@ -19,43 +21,42 @@ const contact = () => {
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="text-white max-w-lg text-center pt-10 contacttexts">
-          <p className="text-4xl font-normal">Let`&apos;`s Talk</p>
-          <p className=" pt-4 csubheading">
-            Start simplifying your life with Simple AI today!
-          </p>
+        <Header/>
+        <HeaderMobile/>
+        <div className="text-white max-w-lg text-center contacttexts">
+          <p className="text-4xl font-normal">Drop us a message and we will get back to you.</p>
         </div>
         <div className="pt-12 flex">
           <form action="#" method="post" id="myForm" className="text-white ">
-            <label htmlFor="">
+            <label htmlFor="" className="">
               <input
                 type="email"
                 name=""
                 placeholder="Your Email"
                 required
-                className="inputw "
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
               />
               <span></span>
             </label>
             <br />
-            <br />
+            
             <label htmlFor="">
               <input
                 type="text"
                 name=""
                 required
-                className="inputw"
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
                 placeholder="Name"
               />
               <span></span>
             </label>
             <br />
-            <br />
+            
             <label htmlFor="">
               <textarea
                 rows={6}
-                cols={50}
-                className="inputm resize-none inputw"
+                cols={40}
+                className="inputm resize-none inputw sm:mb-0 xs:mb-0"
                 placeholder="
             Message"
                 required
@@ -79,7 +80,7 @@ const contact = () => {
         </div>
 
         <div className="pt-6 text-center contacttextbox text-white">
-          <p className="text-md contacttext">
+          <p className="text-md contacttext font-poppins">
             Join us on this transformative journey as we harness the power of AI
             to simplify your life and unlock your true potential.At Simple AI,
             we believe that technology should empower, uplift,and enhance every
@@ -129,7 +130,7 @@ const contact = () => {
           </Link>
         </div>
 
-        <div className="copyright text-center text-white pt-5">
+        <div className="copyright text-center text-white pt-5 font-poppins" >
           <p>© Copyright 2023 - Simple AI</p>
         </div>
       </div>

@@ -42,29 +42,46 @@ const SlideData = () => {
       
       
       <div className="laptop absolute flex flex-col lg:flex-row">
-      <div className="mobile-title">
+      <div className="">
     
-            <h4>{currentSlide.title}</h4>
+            <p className="font-poppins text-white">{currentSlide.title}</p>
           </div>
     
         <div className="slideimage">
           <Image src={Laptop} alt="Laptop Image" width={525} height={355} />
         </div>
 
-        <div className="slidetext ">
-          <div id="textContainer">
-            <h4>{currentSlide.title}</h4>
+        <div className="slidetext   ">
+          <div id="">
+            <p className="font-poppins text-white ">{currentSlide.title}</p>
 
-            <h2>{currentSlide.description.split(' ').map((word, wordIndex)=> word.toLowerCase() === 'multilingual'? (
+            <h2 >
+              {currentSlide.description.split(' ').map((word, wordIndex) => {
+            if (word.toLowerCase() === 'multilingual'){
+              return(
+            
               <span key={wordIndex} className="highlight">
                 {word}{' '}
               </span>
 
-            ): 
-            (
-              <span key={wordIndex}>{word} </span>
-            )
-            )}</h2>
+            );
+              }else if(word.toLowerCase() === 'empowering'){
+                return(
+                  <span key={wordIndex} className="highlight">
+                  {word}{' '}
+                  </span>
+                );
+              }else{
+                return(
+                  <span key={wordIndex}>{word} </span>
+                );
+              }
+
+
+
+
+} )}</h2>
+            
             <div className="slidebutton text-white ">
               <button className="slidebutton1 mr-4">Try For Free</button>
               <button className="slidebutton2">Learn More</button>
