@@ -29,8 +29,8 @@ const EndlessStory = () => {
         />
 
         <div className="absolute endlesstext ">
-          <div className="endless">Endless Stories</div>
-          <div className="endless-content">
+          <div className="endless font-poppins">Endless Stories</div>
+          <div className="endless-content font-poppins">
             Inspire <span>creativity</span> in kids and foster interactive,
             educational moments for families.
           </div>

@@ -29,7 +29,7 @@ const Simplemail = () => {
           {" "}
           <button className="mailbutton">Try For Free</button>
         </div>
-        <div className="mailimage">
+        <div className="mailimage sm:pt-5 xs:pt-5 sm:pl-3 xs:pl-3 xs:pr-3 sm:pr-3">
           <Image
             src={mailpic}
             alt="Mail Image"
