@@ -24,8 +24,8 @@ const contact = () => {
         <Header/>
         <HeaderMobile/>
         <div className="text-white max-w-lg text-center pt-10 contacttexts">
-          <p className="text-4xl font-normal">Let&apos;s Talk</p>
-          <p className=" pt-4 csubheading">
+          <p className="text-4xl font-normal font-poppins">Let&apos;s Talk</p>
+          <p className=" pt-4 csubheading font-poppins">
             Start simplifying your life with Simple AI today!
           </p>
         </div>
@@ -83,7 +83,7 @@ const contact = () => {
         </div>
 
         <div className="pt-6 text-center contacttextbox text-white">
-          <p className="text-md contacttext">
+          <p className="text-md contacttext font-poppins">
             Join us on this transformative journey as we harness the power of AI
             to simplify your life and unlock your true potential.At Simple AI,
             we believe that technology should empower, uplift,and enhance every
@@ -133,7 +133,7 @@ const contact = () => {
           </Link>
         </div>
 
-        <div className="copyright text-center text-white pt-5">
+        <div className="copyright text-center text-white pt-5 font-poppins" >
           <p>© Copyright 2023 - Simple AI</p>
         </div>
       </div>

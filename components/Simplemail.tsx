@@ -17,8 +17,8 @@ const Simplemail = () => {
           objectFit="cover"
         />
       </div>
-
-      <div className="mailtext absolute top-0 left-0 w-full h-full flex flex-col items-centerjustify-center">
+ 
+      <div className="mailtext absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
         <h2 className="text-white text-center">
           Also try our <span>Simplemail</span> extension for Gmail
         </h2>

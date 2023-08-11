@@ -44,7 +44,7 @@ const SlideData = () => {
       <div className="laptop absolute flex flex-col lg:flex-row">
       <div className="mobile-title">
     
-            <h4>{currentSlide.title}</h4>
+            <h4 className="font-poppins">{currentSlide.title}</h4>
           </div>
     
         <div className="slideimage">
