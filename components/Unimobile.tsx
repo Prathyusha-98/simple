@@ -57,13 +57,13 @@ const Unimobile = ()=>{
           <div className='pb-12' ><p className='text-gray-300 text-lg font-normal leading-normal text-center font-poppins'>Simple Uni</p></div>
           <div className='pb-12 w-[294px]'><p className='text-gray-300 text-xs font-normal leading-normal text-center font-poppins'>A powerhouse web application empowering users to excel in writing, learning, and presenting.</p></div>
           <div className='flex  justify-center items-center mb-6'>
-            <button onClick={() => setSelected('write')} className='  mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] bg-[rgba(255,255,255,0.2)] '>
+            <button onClick={() => setSelected('write')} className={`mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] ${selected === 'learn' ? 'bg-[rgba(255,255,255,0.2)]' : ' '}   hover:bg-[rgba(255,255,255,0.2)]`}>
               <p className='text-gray-300 text-opacity-70 font-poppins text-xs font-normal leading-normal'>Simple Write</p>
             </button>
-            <button onClick={() => setSelected('learn')} className='mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] bg-[rgba(255,255,255,0.2)] '>
+            <button onClick={() => setSelected('learn')} className={`mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] ${selected === 'learn' ? 'bg-[rgba(255,255,255,0.2)]' : ' '}   hover:bg-[rgba(255,255,255,0.2)]`}>
               <p className='text-gray-300 text-opacity-70 font-poppins text-xs font-normal leading-normal'>Simple Learn</p>
             </button>
-            <button onClick={() => setSelected('present')} className='w-[110px] h-[29px] flex-shrink-0 rounded-[4px] bg-[rgba(255,255,255,0.2)] '>
+            <button onClick={() => setSelected('present')} className={`mr-[14px] w-[110px] h-[29px] flex-shrink-0 rounded-[4px] ${selected === 'learn' ? 'bg-[rgba(255,255,255,0.2)]' : ' '}   hover:bg-[rgba(255,255,255,0.2)]`}>
               <p className='text-gray-300 text-opacity-70 font-poppins text-xs font-normal leading-normal'>Simple Present</p>
             </button>
           </div>

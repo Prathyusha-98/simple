@@ -8,7 +8,7 @@ import Link from 'next/link'
 const Neetmobile = () => {
     return(
         <>
-            <div className='relative lg:hidden sm:block xs:block'>
+            <div className='relative lg:hidden sm:block xs:block '>
             <Image className='w-full h-[681px]' src={violetmobile} alt='' />
             <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center'>
                 <div className='pt-20' ><p className='text-white font-poppins text-lg font-medium leading-normal'>NEET AI Tutor</p></div>
@@ -21,10 +21,10 @@ const Neetmobile = () => {
               Learn More
             </button>
           </div>
-                <div><Image src={mobilen} alt='' /></div>
+                <div className='mx-12' ><Image src={mobilen} alt='' /></div>
             </div>
-            <Image className='absolute top-[385px] left-[0] w-[45px] h-[45px] ' src={neetlogo} alt=''/>
-            <Image className='absolute top-[581px] left-[329px] w-[45px] h-[45px] ' src={what} alt=''/>
+            <Image className='absolute top-[385px] left-8 w-[45px] h-[45px] ' src={neetlogo} alt=''/>
+            <Image className='absolute top-[581px] left-[309px] w-[45px] h-[45px] ' src={what} alt=''/>
             </div>
         </>
     )

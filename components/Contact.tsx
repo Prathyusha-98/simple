@@ -7,10 +7,10 @@ import Linkedin from "../assets/linkedin.svg"
 import Twitter from "../assets/twitter.svg"
 import Link from 'next/link'
 import HeaderMobile from "../components/HeaderMobile";
-import Header from '../components/Header'
+import Header from './Header'
 const contact = () => {
   return (
-    <div className="contact bg-gray-200 h-[1257px] relative">
+    <div className=" bg-gray-200 h-[1257px] relative">
       <div className="w-full h-full absolute inset-0 contactbg">
         <Image
           src={ContactBG}
@@ -23,11 +23,8 @@ const contact = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <Header/>
         <HeaderMobile/>
-        <div className="text-white max-w-lg text-center pt-10 contacttexts">
-          <p className="text-4xl font-normal">Let&apos;s Talk</p>
-          <p className=" pt-4 csubheading">
-            Start simplifying your life with Simple AI today!
-          </p>
+        <div className="text-white max-w-lg text-center contacttexts">
+          <p className="text-4xl font-normal">Drop us a message and we will get back to you.</p>
         </div>
         <div className="pt-12 flex">
           <form action="#" method="post" id="myForm" className="text-white ">

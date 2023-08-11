@@ -4,7 +4,6 @@ import Image from 'next/image'
 import screen from '@/assets/screen.png'
 import {BsArrowRight, BsArrowUpRight} from 'react-icons/bs'
 import Header from './Header'
-import Link from 'next/link'
 import arrow from '@/assets/arrow.png'
 import blue from '@/assets/blue.png'
 import violet from '@/assets/violet.png'
@@ -20,13 +19,22 @@ import EndlessStory from './EndlessStory'
 import SlideData from './SlideData'
 import Banner from './Banner'
 import Contact from './Contact'
-
+import what from '@/assets/what.png'
+import neetlogo from '@/assets/neetlogo.png'
+import small from '@/assets/small.png'
+import ContactBG from "../assets/bgcontact.svg"
+import Youtube from "../assets/youtube.svg"
+import Instagram from "../assets/instagram.svg"
+import Linkedin from "../assets/linkedin.svg"
+import Twitter from "../assets/twitter.svg"
+import Link from 'next/link'
 const Hero =() =>{
 
     return (
         <>
     <div className='relative'>
-      <Image className='w-full 1xl:h-[960px] xl:h-[563px] sm:h-[600px] xs:h-[700px] sm:w-full' src={screen} alt='' />
+      <Image className='w-full 1xl:h-[960px] xl:h-[563px] xs:hidden sm:hidden lg:block' src={screen} alt='' />
+      <Image className='w-full xs:block sm:block lg:hidden' src={small} alt='' />
       <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center'>
 
         <Header/>
@@ -83,8 +91,10 @@ const Hero =() =>{
     <div className=' lg:hidden sm:block xs:block'><Unimobile/></div>
 
     <div className='relative lg:block sm:hidden xs:hidden'>
-      <Image className='w-full 1xl:h-[499px] xl:h-[499px]' src={violet} alt='' />
+      <Image className='w-full lg:h-[599px] 1xl:h-[499px] xl:h-[499px]' src={violet} alt='' />
       <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center'>
+          <Image className='absolute lg:top-[180px] lg:left-[0px] xl:top-[110px] xl:left-[103px] 1xl:top-[110px] 1xl:left-[173px] 2xl:top-[110px] 2xl:left-[223px] 3xl:top-[110px] 3xl:left-[323px] w-[80px] h-[80px] ' src={neetlogo} alt=''/>
+          <Image className='absolute lg:top-[351px] lg:left-[323px] xl:top-[351px] xl:left-[429px] 1xl:top-[351px] 1xl:left-[529px] 2xl:top-[351px] 2xl:left-[609px] 3xl:top-[351px] 3xl:left-[689px] w-[80px] h-[80px] ' src={what} alt=''/>
         <div className='flex justify-center items-center'>
             <Image src={mobile} alt='' />
             <div className='ml-[139px]'>
@@ -109,7 +119,131 @@ const Hero =() =>{
     <EndlessStory/>
     <SlideData/>
     <Banner/> 
-    <Contact/>
+    <div className="contact bg-gray-200 relative">
+      <div className="w-full h-full absolute inset-0 contactbg">
+        <Image
+          src={ContactBG}
+          alt="Contact"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <Header/>
+        <HeaderMobile/>
+        <div className="text-white max-w-lg text-center pt-10 contacttexts">
+          <p className="text-4xl font-normal">Drop us a message and we will get back to you.</p>
+        </div>
+        <div className="pt-12 flex">
+          <form action="#" method="post" id="myForm" className="text-white ">
+            <label htmlFor="" className="">
+              <input
+                type="email"
+                name=""
+                placeholder="Your Email"
+                required
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
+              />
+              <span></span>
+            </label>
+            <br />
+            
+            <label htmlFor="">
+              <input
+                type="text"
+                name=""
+                required
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
+                placeholder="Name"
+              />
+              <span></span>
+            </label>
+            <br />
+            
+            <label htmlFor="">
+              <textarea
+                rows={6}
+                cols={40}
+                className="inputm resize-none inputw sm:mb-0 xs:mb-0"
+                placeholder="
+            Message"
+                required
+              />
+              <br /> <br />
+            </label>
+            <button
+              type="submit"
+              value="Send
+            "
+              className="cbutton"
+            >
+              GET IN TOUCH
+            </button>
+          </form>
+        </div>
+
+        <div className="text-white text-center pt-8 clinks">
+          <span className="text-md pr-14">About Us</span>
+          <span className="text-md">Contact Us</span>
+        </div>
+
+        <div className="pt-6 text-center contacttextbox text-white">
+          <p className="text-md contacttext">
+            Join us on this transformative journey as we harness the power of AI
+            to simplify your life and unlock your true potential.At Simple AI,
+            we believe that technology should empower, uplift,and enhance every
+            aspect of your existence.
+          </p>
+        </div>
+        <div className=" flex justify-center items-center space-x-4 pt-8">
+          <Link
+            href="https://www.youtube.com/@simpleai2403"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={Youtube}
+              alt="Youtube"
+              className="w-6 h-6"
+            />
+          </Link>
+          <Link
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src={Twitter} alt="Twitter" className="w-6 h-6" />
+          </Link>
+          <Link
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={Instagram}
+              alt="Instagram"
+              className="w-6 h-6"
+            />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/company/simple-ai-powered/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={Linkedin}
+              alt="LinkedIn"
+              className="w-6 h-6"
+            />
+          </Link>
+        </div>
+
+        <div className="copyright text-center text-white pt-5">
+          <p>© Copyright 2023 - Simple AI</p>
+        </div>
+      </div>
+    </div>
 
 
 

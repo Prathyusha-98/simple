@@ -12,7 +12,7 @@ export default function Uni() {
 
   const writeContent = (
     <>
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center lg:mx-12'>
       <div className='flex justify-center items-center'>
       <div className='w-[399px] h-[364px]  '>
       <div ><p className='text-white font-poppins text-base font-medium leading-normal mb-[26px]'>Simple Uni</p></div>
@@ -37,7 +37,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='' src={write} alt='Learn' />
+      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] ' src={write} alt='Learn' />
       </div>
     </div>
     </>
@@ -45,7 +45,7 @@ export default function Uni() {
 
   const learnContent = (
     <>
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center lg:mx-12'>
       <div className='flex justify-center items-center'>
       <div className='w-[399px] h-[364px]  '>
       <div ><p className='text-white font-poppins text-base font-medium leading-normal mb-[26px]'>Simple Uni</p></div>
@@ -62,7 +62,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='' src={learn} alt='Learn' />
+      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] ' src={learn} alt='Learn' />
       </div>
     </div>
     </>
@@ -70,7 +70,7 @@ export default function Uni() {
 
   const presentContent = (
     <>
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center lg:mx-12'>
       <div className='flex justify-center items-center'>
       <div className='w-[399px] h-[364px]  '>
       <div ><p className='text-white font-poppins text-base font-medium leading-normal mb-[26px]'>Simple Uni</p></div>
@@ -87,7 +87,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='' src={present} alt='Learn' />
+      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] ' src={present} alt='Learn' />
       </div>
     </div>
     </>
