@@ -17,6 +17,7 @@ import sonu from '@/assets/sonu.png'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import HeaderMobile from './HeaderMobile';
+import Footer from './Footer';
 const About = () => {
   const responsive = {
     superLargeDesktop: {
@@ -180,7 +181,7 @@ const About = () => {
         </Carousel>;
         </div>
       </div>
-      <Contact />
+      <Footer />
     </>
   );
 };

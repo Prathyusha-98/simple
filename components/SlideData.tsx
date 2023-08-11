@@ -42,18 +42,18 @@ const SlideData = () => {
       
       
       <div className="laptop absolute flex flex-col lg:flex-row">
-      <div className="">
+      <div className="mobile-title">
     
-            <p className="font-poppins text-white">{currentSlide.title}</p>
+            <h4 className="font-poppins">{currentSlide.title}</h4>
           </div>
     
         <div className="slideimage">
           <Image src={Laptop} alt="Laptop Image" width={525} height={355} />
         </div>
 
-        <div className="slidetext   ">
-          <div id="">
-            <p className="font-poppins text-white ">{currentSlide.title}</p>
+        <div className="slidetext ">
+          <div id="textContainer">
+            <h4 className="font-poppins">{currentSlide.title}</h4>
 
             <h2 >
               {currentSlide.description.split(' ').map((word, wordIndex) => {

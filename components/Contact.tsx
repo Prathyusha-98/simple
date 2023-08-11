@@ -1,19 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import ContactBG from "../assets/bgcontact.svg"
-import Youtube from "../assets/youtube.svg"
-import Instagram from "../assets/instagram.svg"
-import Linkedin from "../assets/linkedin.svg"
-import Twitter from "../assets/twitter.svg"
+import bgcontact from '@/assets/bgcontact.png'
+import youtube from "../assets/youtube.png"
+import instagram from '@/assets/instagram.png'
+import linkedin from "@/assets/linkedin.png"
+import twitter from "@/assets/twitter.png"
 import Link from 'next/link'
 import HeaderMobile from "../components/HeaderMobile";
-import Header from './Header'
+import Header from '../components/Header'
 const contact = () => {
   return (
     <div className=" bg-gray-200 h-[1257px] relative">
       <div className="w-full h-full absolute inset-0 contactbg">
         <Image
-          src={ContactBG}
+          src={bgcontact}
           alt="Contact"
           layout="fill"
           objectFit="cover"
@@ -23,8 +23,8 @@ const contact = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <Header/>
         <HeaderMobile/>
-        <div className="text-white max-w-lg text-center contacttexts">
-          <p className="text-4xl font-normal">Drop us a message and we will get back to you.</p>
+        <div className="text-white max-w-lg text-center pt-10 contacttexts">
+          <p className="text-4xl font-normal font-poppins">Drop us a message and we will get back to you.</p>
         </div>
         <div className="pt-12 flex">
           <form action="#" method="post" id="myForm" className="text-white ">
@@ -94,7 +94,7 @@ const contact = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src={Youtube}
+              src={youtube}
               alt="Youtube"
               className="w-6 h-6"
             />
@@ -104,7 +104,7 @@ const contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src={Twitter} alt="Twitter" className="w-6 h-6" />
+            <Image src={twitter} alt="Twitter" className="w-6 h-6" />
           </Link>
           <Link
             href="https://www.instagram.com/"
@@ -112,7 +112,7 @@ const contact = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src={Instagram}
+              src={instagram}
               alt="Instagram"
               className="w-6 h-6"
             />
@@ -123,7 +123,7 @@ const contact = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src={Linkedin}
+              src={linkedin}
               alt="LinkedIn"
               className="w-6 h-6"
             />
