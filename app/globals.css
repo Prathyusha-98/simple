@@ -688,15 +688,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .mobile-title h4 {
-    margin-left: 35px;
-    color: #fff;
-    text-align: center;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+
   .stories {
     display: none;
   }
