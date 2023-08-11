@@ -80,7 +80,7 @@ const contact = () => {
         </div>
 
         <div className="pt-6 text-center contacttextbox text-white">
-          <p className="text-md contacttext">
+          <p className="text-md contacttext font-poppins">
             Join us on this transformative journey as we harness the power of AI
             to simplify your life and unlock your true potential.At Simple AI,
             we believe that technology should empower, uplift,and enhance every
@@ -130,7 +130,7 @@ const contact = () => {
           </Link>
         </div>
 
-        <div className="copyright text-center text-white pt-5">
+        <div className="copyright text-center text-white pt-5 font-poppins" >
           <p>© Copyright 2023 - Simple AI</p>
         </div>
       </div>
