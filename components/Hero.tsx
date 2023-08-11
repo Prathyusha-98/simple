@@ -22,17 +22,19 @@ import Contact from './Contact'
 import what from '@/assets/what.png'
 import neetlogo from '@/assets/neetlogo.png'
 import small from '@/assets/small.png'
-import bgcontact from "@/assets/bgcontact.png"
-import youtube from '@/assets/youtube.svg'
-import instagram from '@/assets/instagram.png'
-import linkedin from '@/assets/linkedin.png'
-import twitter from '@/assets/twitter.png'
+import ContactBG from "../assets/bgcontact.svg"
+import Youtube from "../assets/youtube.svg"
+import Instagram from "../assets/instagram.svg"
+import Linkedin from "../assets/linkedin.svg"
+import Twitter from "../assets/twitter.svg"
 import Link from 'next/link'
 const Hero =() =>{
 
     return (
         <>
     <div className='relative'>
+      <Image className='w-full 1xl:h-[960px] xl:h-[563px] xs:hidden sm:hidden lg:block' src={screen} alt='' />
+      <Image className='w-full xs:block sm:block lg:hidden' src={small} alt='' />
       <Image className='w-full 1xl:h-[960px] xl:h-[563px] xs:hidden sm:hidden lg:block' src={screen} alt='' />
       <Image className='w-full xs:block sm:block lg:hidden' src={small} alt='' />
       <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center'>
@@ -119,10 +121,10 @@ const Hero =() =>{
     <EndlessStory/>
     <SlideData/>
     <Banner/> 
-    <div className=" bg-gray-200 contact relative">
+    <div className="contact bg-gray-200 relative">
       <div className="w-full h-full absolute inset-0 contactbg">
         <Image
-          src={bgcontact}
+          src={ContactBG}
           alt="Contact"
           layout="fill"
           objectFit="cover"
@@ -130,7 +132,9 @@ const Hero =() =>{
       </div>
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="text-white max-w-lg text-center contacttexts">
+        <Header/>
+        <HeaderMobile/>
+        <div className="text-white max-w-lg text-center pt-10 contacttexts">
           <p className="text-4xl font-normal">Drop us a message and we will get back to you.</p>
         </div>
         <div className="pt-12 flex">
@@ -187,7 +191,7 @@ const Hero =() =>{
         </div>
 
         <div className="pt-6 text-center contacttextbox text-white">
-          <p className="text-md contacttext font-poppins">
+          <p className="text-md contacttext">
             Join us on this transformative journey as we harness the power of AI
             to simplify your life and unlock your true potential.At Simple AI,
             we believe that technology should empower, uplift,and enhance every
@@ -201,7 +205,7 @@ const Hero =() =>{
             rel="noopener noreferrer"
           >
             <Image
-              src={youtube}
+              src={Youtube}
               alt="Youtube"
               className="w-6 h-6"
             />
@@ -211,7 +215,7 @@ const Hero =() =>{
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src={twitter} alt="Twitter" className="w-6 h-6" />
+            <Image src={Twitter} alt="Twitter" className="w-6 h-6" />
           </Link>
           <Link
             href="https://www.instagram.com/"
@@ -219,7 +223,7 @@ const Hero =() =>{
             rel="noopener noreferrer"
           >
             <Image
-              src={instagram}
+              src={Instagram}
               alt="Instagram"
               className="w-6 h-6"
             />
@@ -230,19 +234,18 @@ const Hero =() =>{
             rel="noopener noreferrer"
           >
             <Image
-              src={linkedin}
+              src={Linkedin}
               alt="LinkedIn"
               className="w-6 h-6"
             />
           </Link>
         </div>
 
-        <div className="copyright text-center text-white pt-5 font-poppins" >
+        <div className="copyright text-center text-white pt-5">
           <p>© Copyright 2023 - Simple AI</p>
         </div>
       </div>
     </div>
- 
 
 
 
