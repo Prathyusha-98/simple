@@ -57,7 +57,7 @@ export default function Header() {
             <Link href="/about">
               <button
                 className={`${
-                  currentPage === '/About' ? 'text-white' : 'text-[#999C9C]'
+                  currentPage === '/about' ? 'text-white' : 'text-[#999C9C]'
                 } hover:text-white px-4 py-2 rounded-md`}
               >
                 About Us
