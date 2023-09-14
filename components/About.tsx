@@ -44,6 +44,9 @@ const About = () => {
         <div className="lg:block sm:hidden xs:hidden pt-12">
           <Header />
         </div>
+        <div className="lg:hidden sm:block xs:block pt-12">
+          <HeaderMobile/>
+        </div>
 
         <div className="about-text ">
           <h1>Simple AI Enterprise</h1>
