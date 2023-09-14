@@ -38,8 +38,12 @@ const Hero =() =>{
       <Image className='w-full xs:block sm:block lg:hidden' src={small} alt='' />
       <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center'>
 
-        <Header/>
-        <HeaderMobile/>
+        <div className="lg:block sm:hidden xs:hidden pt-12">
+          <Header />
+        </div>
+        <div className="lg:hidden sm:block xs:block pt-12">
+          <HeaderMobile/>
+        </div>
 
         <div className='flex justify-center items-center '>
           <p className='1xl:w-[737px] sm:w-[443px] sm:h-[114px] xs:w-[283px] xs:h-[114px] text-[#fff] text-center font-montserrat 1xl:text-[45px] sm:text-[30px] xs:text-[25px] font-extrabold leading-normal '>Empowering You to <span className='text-transparent bg-clip-text bg-gradient-to-b to-[#3A07E1] from-[#A010E0]' >Excel</span> and Live <span className='text-transparent bg-clip-text bg-gradient-to-b to-[#3A07E1] from-[#A010E0]'>Better</span> Lives</p>
