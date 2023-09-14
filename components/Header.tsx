@@ -54,10 +54,10 @@ export default function Header() {
                 Home
               </button>
             </Link>
-            <Link href="/about">
+            <Link href="/aboutus">
               <button
                 className={`${
-                  currentPage === '/about' ? 'text-white' : 'text-[#999C9C]'
+                  currentPage === '/aboutus' ? 'text-white' : 'text-[#999C9C]'
                 } hover:text-white px-4 py-2 rounded-md`}
               >
                 About Us
