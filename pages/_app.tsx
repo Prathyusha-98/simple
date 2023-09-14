@@ -7,8 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <Head>
       <title>
         Simple AI
-      </title>
-      <link rel="shortcut icon" href="favicon.ico" />
+      </title>  
     </Head>
     <Component {...pageProps} />
     </>
