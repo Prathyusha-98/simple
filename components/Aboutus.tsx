@@ -19,7 +19,7 @@ import 'react-multi-carousel/lib/styles.css';
 import Footer from '@/components/Footer';
 import HeaderMobile from '@/components/HeaderMobile';
 
-const about = () => {
+const Aboutus = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -190,4 +190,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default Aboutus;
