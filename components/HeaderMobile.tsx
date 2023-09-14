@@ -46,7 +46,7 @@ import { useRouter } from 'next/router';
           <Link href="/">Home</Link>
         </li>
         <li className="my-4">
-          <Link href="/about"><button>About us</button></Link>
+          <Link href="/pages/about.tsx"><button>About us</button></Link>
         </li>
         <li className="my-4">
           <Link href="/contact">Contact</Link>
