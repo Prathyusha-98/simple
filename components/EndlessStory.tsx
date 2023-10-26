@@ -4,6 +4,7 @@ import StoryBG from "../assets/endlessbgg.svg";
 import StoryBook from "../assets/man.svg";
 import StoryR from "../assets/StoryRes.svg";
 import GIF from "../assets/story.gif";
+import Link from "next/link";
 
 const EndlessStory = () => {
   return (
@@ -34,13 +35,18 @@ const EndlessStory = () => {
             Inspire <span>creativity</span> in kids and foster interactive,
             educational moments for families.
           </div>
+
           <div className="flex ebutton">
+          <Link href="https://stories.thesimpleai.com" className="" target="_blank">
             <button className=" ebutton1  text-white rounded-md mr-4">
               Try For Free
             </button>
+            </Link>
+            <Link href="https://stories.thesimpleai.com/#how" className="" target="_blank">
             <button className="ebutton2 text-white rounded-md">
               Learn More
             </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -52,10 +52,12 @@ const Hero =() =>{
           <p className='1xl:w-[737px] sm:w-[376px] sm:h-[110px] xs:w-[276px] xs:h-[110px] text-[#fff] text-center font-poppins 1xl:text-base xs:text-[12px] font-light leading-[28px] '>At Simple AI, we are on a mission to develop AI-driven applications that are user-friendly, accessible to all, and ultimately empower individuals to perform at their best and live better lives.</p>
         </div>
         <div className='flex justify-center items-center 1xl:mt-[69px] 1xl:mb-[330px] xs:mt-12'>
-        <div className='w-[191px] h-[50px] text-center bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] rounded-[186px] flex justify-center items-center'>
-            <p className='text-white text-center font-poppins text-base font-bold leading-[19px]' >Get started</p>
+        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <button className='w-[191px] h-[50px] text-center bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] rounded-[186px] flex justify-center items-center'>
+            <span className='text-white text-center font-poppins text-base font-bold leading-[19px]' >Explore</span>
             <BsArrowRight className='fill-white text-[24px] font-bold ml-4' />
-        </div>
+        </button>
+        </a>
         </div>
 
       </div>
@@ -82,7 +84,7 @@ const Hero =() =>{
           </div>        
         </div>
         <div className='mt-12'>
-            <Link href='/about' className='flex justify-center items-center'>
+            <Link href='https://www.thesimpleai.com/aboutus' className='flex justify-center items-center'>
                 <button className='flex justify-center items-center bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] text-transparent text-center font-montserrat 1xl:text-base xs:text-[12px] sm:text-[12px] font-medium leading-normal mr-3'>
                 <span className='underline mr-3 '>Learn More About Us</span>
                 <Image className='xs:w-[12px]' src={arrow} alt='' />
@@ -106,12 +108,16 @@ const Hero =() =>{
                 <div className='flex '><p className='text-white font-poppins text-lg font-medium leading-normal'>NEET AI Tutor</p></div>
                 <div className='flex justify-center items-center my-[26px] '><p className='w-[487px] text-white font-montserrat text-[30px] font-extrabold leading-normal'>Effortless <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4]'>NEET learning</span> at your fingertips, AI Chat companion on WhatsApp!</p></div>
                 <div className="flex nbutton">
+<Link href="https://neetaitutor.thesimpleai.com/home" className='' target='_blank'>
             <button className=" ebutton1  text-white rounded-md mr-4">
               Try For Free
             </button>
+            </Link>
+            <Link href="https://neetaitutor.thesimpleai.com/" className='' target='_blank'>
             <button className="ebutton2 text-white rounded-md">
               Learn More
             </button>
+            </Link>
           </div>
             </div>
         </div>
