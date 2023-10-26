@@ -6,6 +6,7 @@ import SlideBG from "../assets/slidebg.svg";
 import forward from "../assets/forward.svg";
 import backward from "../assets/backward.svg";
 import Laptop from "../assets/laptop.svg";
+import Link from "next/link";
 
 const SlideData = () => {
   const textData = [
@@ -83,8 +84,12 @@ const SlideData = () => {
 } )}</h2>
             
             <div className="slidebutton text-white ">
+              <Link href="https://play.google.com/store/apps/details?id=com.simplyspeak">
               <button className="slidebutton1 mr-4">Try For Free</button>
+              </Link>
+              <Link href="https://play.google.com/store/apps/details?id=com.simplyspeak">
               <button className="slidebutton2">Learn More</button>
+              </Link>
             </div>
           </div>
 
