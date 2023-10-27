@@ -62,15 +62,15 @@ const Hero =() =>{
 
       </div>
     </div>
-    <div  className='bg-[#0D0037] h-[472px] xs:h-[420px] sm:h-[420px] pt-14 shadow-[#0D0037] shadow-lg  '>
+    <div  className='bg-[#0D0037] h-[380px] xs:h-[380px] sm:h-[380px] pt-14 shadow-[#0D0037] shadow-lg  '>
         <div className='flex justify-center items-center '>
           <p className='1xl:w-[828px] sm:w-[486px] xs:w-[286px] text-white text-center font-montserrat 1xl:text-[50px] sm:text-[30px] xs:text-[20px] font-semibold leading-normal'>
             Unleashing the Power of AI, Simplified
           </p>
         </div>
         <div className=' flex justify-center items-center mt-6 '>
-          <p className='lg:block sm:hidden xs:hidden 1xl:w-[902px] sm:w-[492px] xs:w-[292px] text-[rgba(255,255,255,0.8)] text-center font-poppins 1xl:text-sm sm:text-[10px] xs:text-[10px] font-medium leading-normal'>
-          Imagine a world where technology seamlessly integrates into your daily life, making complex tasks effortless and enhancing your capabilities. That’s the vision we strive to bring to reality. Our vision is to be a world leader in providing AI-driven applications that empower individuals to reach their full potential and improve the quality of their lives. We strive to make AI accessible to everyone and create user-friendly solutions that simplify complex tasks.
+          <p className='lg:block sm:hidden xs:hidden 1xl:w-[1002px] sm:w-[690px] xs:w-[392px] text-[rgba(255,255,255,0.8)] text-center font-poppins 1xl:text-sm sm:text-[10px] xs:text-[10px] font-medium leading-normal'>
+          Imagine a world where technology seamlessly integrates into your daily life, making complex tasks effortless and enhancing your capabilities. That's the vision we strive to bring to reality. Our vision is to be a world leader in providing AI-driven applications that empower individuals to reach their full potential and improve the quality of their lives. We strive to make AI accessible to everyone and create user-friendly solutions that simplify complex tasks.
           </p>
         </div>
         <div className=' lg:hidden sm:block xs:block '>
