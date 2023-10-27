@@ -37,12 +37,12 @@ const EndlessStory = () => {
           </div>
 
           <div className="flex ebutton">
-          <Link href="https://stories.thesimpleai.com" className="" target="_blank">
-            <button className=" ebutton1  text-white rounded-md mr-4">
+          <Link href='https://stories.thesimpleai.com/' rel="" className="" >
+            <button  className=" ebutton1  text-white rounded-md mr-4">
               Try For Free
             </button>
             </Link>
-            <Link href="https://stories.thesimpleai.com/#how" className="" target="_blank">
+            <Link href="https://stories.thesimpleai.com/#how" rel="" className="" >
             <button className="ebutton2 text-white rounded-md">
               Learn More
             </button>
