@@ -192,6 +192,12 @@ body {
   border: solid 0.1px;
 }
 
+.ebutton1,
+.ebutton2 {
+  cursor: pointer;
+}
+
+
 /* Banner */
 
 .banner {
@@ -505,8 +511,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-items: center;
-    justify-content: center;
     background: linear-gradient(180deg, #240241 0%, #200240 100%);
   }
   .endless {

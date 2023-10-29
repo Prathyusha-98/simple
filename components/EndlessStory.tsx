@@ -9,6 +9,74 @@ import Link from "next/link";
 const EndlessStory = () => {
   return (
    <>
+    {/* <section className="story relative h-screen flex flex-col md:flex-row">
+      <div className=" relative flex-1 h-1/2 md:h-full md:hidden lg:hidden">
+        <Image
+          src={StoryBook}
+          alt="Reading Stories"
+          layout="fill"
+          objectFit="cover"
+          className=" m-0 p-0 "
+        />
+      </div>
+
+      <div className="storybg xl:h-full md:h-full relative flex-1 ">
+        <Image
+          src={StoryBG}
+          alt="Endless Story Image"
+          layout="fill"
+          objectFit="cover"
+          className="m-0 p-0"
+        />
+        
+
+        <div className="absolute endlesstext ">
+          <div className="endless font-poppins">Endless Stories</div>
+          <div className="endless-content font-poppins">
+            Inspire <span>creativity</span> in kids and foster interactive,
+            educational moments for families.
+          </div>
+
+          <div className="flex ebutton">
+          <Link href="https://stories.thesimpleai.com" target="_blank">
+            <button className=" ebutton1  text-white rounded-md mr-4 cursor-pointer">
+              Try For Free
+            </button>
+            </Link>
+            <Link href="https://stories.thesimpleai.com/#how" target="_blank">
+            <button className="ebutton2 text-white rounded-md cursor-pointer">
+              Learn More
+            </button>
+            </Link>
+          </div>
+          
+        </div>
+      </div>
+      <div className="stories relative flex-1 h-1/2 md:h-full">
+        <Image
+          src={StoryBook}
+          alt="Reading Stories"
+          layout="fill"
+          objectFit="cover"
+          className=" m-0 p-0"
+        />
+      </div>
+
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+        <div className="relative">
+          <Image
+            src={GIF}
+            alt="Story GIF"
+            width={240}
+            height={406}
+            className="gif"
+          />
+        </div>
+      </div>
+    </section> */}
+
+
+  
     <section className="story relative h-screen flex flex-col md:flex-row">
       <div className=" relative flex-1 h-1/2 md:h-full md:hidden lg:hidden">
         <Image
@@ -29,26 +97,26 @@ const EndlessStory = () => {
           className="m-0 p-0"
         />
 
-        <div className="absolute endlesstext ">
-          <div className="endless font-poppins">Endless Stories</div>
-          <div className="endless-content font-poppins">
-            Inspire <span>creativity</span> in kids and foster interactive,
-            educational moments for families.
-          </div>
-
-          <div className="flex ebutton">
-          <Link href="https://stories.thesimpleai.com" className="" target="_blank">
-            <button className=" ebutton1  text-white rounded-md mr-4">
-              Try For Free
-            </button>
-            </Link>
-            <Link href="https://stories.thesimpleai.com/#how" className="" target="_blank">
-            <button className="ebutton2 text-white rounded-md">
-              Learn More
-            </button>
-            </Link>
-          </div>
-        </div>
+<div className="absolute endless-text" style={{ position: "relative", zIndex: 1 }}>
+  <div className="endless font-poppins">Endless Stories</div>
+  <div className="endless-content font-poppins">
+    Inspire <span>creativity</span> in kids and foster interactive,
+    educational moments for families.
+  </div>
+  <div className="flex ebutton">
+    <Link href="https://stories.thesimpleai.com" target="_blank">
+    <button className="ebutton1 text-white rounded-md mr-4">
+      Try For Free
+    </button>
+    </Link>
+    <Link href="https://stories.thesimpleai.com/#how" target="_blank">
+    <button className="ebutton2 text-white rounded-md">
+      Learn More
+    </button>
+    </Link>
+    
+  </div>
+</div>
       </div>
       <div className="stories relative flex-1 h-1/2 md:h-full">
         <Image
@@ -75,5 +143,7 @@ const EndlessStory = () => {
    </>
   );
 };
+
+
 
 export default EndlessStory;
