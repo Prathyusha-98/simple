@@ -12,7 +12,7 @@ export default function Uni() {
 
   const writeContent = (
     <>
-    <div className='flex justify-center items-center lg:mx-12'>
+    <div className='flex justify-center items-center lg:mx-12' id="unibuddy">
       <div className='flex justify-center items-center'>
       <div className='w-[399px] h-[364px]  '>
       <div ><p className='text-white font-poppins text-base font-medium leading-normal mb-[26px]'>Simple Uni</p></div>

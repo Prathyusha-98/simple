@@ -82,7 +82,7 @@ const Aboutus = () => {
               If you share our passion for unlocking the true potential of AI,
               we invite you to connect with us. This is an exciting era for AI,
               and we believe in building AI that people can trust. It goes
-              beyond being responsible and ethical - it`&apos;`s about fostering good
+              beyond being responsible and ethical - it is about fostering good
               business practices and shaping the future of intelligence. Join us
               in this remarkable AI journey.
             </p>
@@ -101,7 +101,7 @@ const Aboutus = () => {
               <Image src={kin} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Kin Cheung</div>
               <div className="text-gray-700 text-center font-poppins text-lg font-medium leading-normal">Founder </div>
-              <div className="w-[240px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Founded 4 Successful Companies Co-founder of a U+0020multi-million dollar business</div>
+              <div className="w-[240px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Founded 4 Successful Companies Co-founder of a Multimillionaire dollar business</div>
             </div>
           </div>
           <div>
@@ -109,7 +109,7 @@ const Aboutus = () => {
               <Image src={hena} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Heena Sinha</div>
               <div className="text-gray-700 text-center font-poppins text-lg font-medium leading-normal">Co-Founder </div>
-              <div className="w-[197px] h-[42px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Co-founder of a multi-million dollar business</div>
+              <div className="w-[197px] h-[42px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Co-founder of a Multimillionaire dollar business</div>
             </div>
           </div>
           <div>
