@@ -7,7 +7,12 @@ import hena from '@/assets/hena.png';
 import praveen from '@/assets/praveen.png';
 import amarjeet from '@/assets/amarjeet.png';
 import karun from '@/assets/karun.png';
-import akshay from '@/assets/akshay.png';
+import dhaval from '@/assets/Dhaval.png';
+import gaurav from '@/assets/Gaurav.png'
+import nadra from '@/assets/Nadra.png'
+import lucita from '@/assets/Lucita.png'
+import sawal from '@/assets/Sawal.png'
+import lakshmi from '@/assets/MahaLakshmi.png'
 import vikrant from '@/assets/vikrant.png';
 import prathyu from '@/assets/prathyu.png';
 import sohail from '@/assets/sohail.png';
@@ -20,15 +25,17 @@ import Footer from '@/components/Footer';
 import HeaderMobile from '@/components/HeaderMobile';
 
 const Aboutus = () => {
+  const [visibleSlides, setVisibleSlides] = useState(3);
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 2
+      items: 3
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -39,6 +46,20 @@ const Aboutus = () => {
       items: 1
     }
   };
+
+  const customNext = () => {
+    const totalItems = 18;
+    if(visibleSlides + 3 <= totalItems) {
+      setVisibleSlides(visibleSlides+3);
+    } 
+  };
+
+  const customPrevious = () => {
+    if(visibleSlides - 3 >= 3){
+      setVisibleSlides(visibleSlides -3);
+    }
+  };
+
   return (
     <>
       <div className="about">
@@ -95,7 +116,19 @@ const Aboutus = () => {
           <h3>Meet the team transforming our AI relationship.</h3>
         </div>
         <div className='lg:mx-24 sm:mx-0 mt-[108px]'>
-        <Carousel responsive={responsive} className='h-[455px] '>
+        <Carousel responsive={responsive}
+        additionalTransfrom={0}
+        arrows
+        autoPlay={false}
+        customButtonGroup={<div />}
+        keyBoardControl
+        minimumTouchDrag={80}
+        renderButtonGroupOutside={false}
+        showDots={false}
+        slidesToSlide={3}
+        swipeable
+        draggable
+        className='h-[455px] '>
           <div>
             <div className='flex flex-col items-center justify-center'>
               <Image src={kin} alt='' />
@@ -135,9 +168,9 @@ const Aboutus = () => {
           </div>
           <div>
             <div className='flex flex-col items-center justify-center'>
-              <Image src={akshay} alt='' />
-              <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Akshay Kumar</div>
-              <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Software Developer</div>
+              <Image src={dhaval} alt='' />
+              <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Dhaval Vaja</div>
+              <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">UX/UI Designer</div>
             </div>
           </div>
           <div>
@@ -182,7 +215,43 @@ const Aboutus = () => {
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">UX/UI Designer</div>
             </div>
           </div>
-        </Carousel>;
+          <div>
+            <div className='flex flex-col items-center justify-center'>
+              <Image src={gaurav} alt='' />
+              <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Gaurav Pardhi</div>
+              <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">UX/UI Designer</div>
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-col items-center justify-center'>
+              <Image src={nadra} alt='' />
+              <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Nadra Hoda</div>
+              <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Web Developer</div>
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-col items-center justify-center pt-5'>
+              <Image src={lucita} alt='' />
+              <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Lucita Pagado</div>
+              <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Social Media Manager</div>
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-col items-center justify-center mt-[-8px]'>
+              <Image src={sawal} alt='' />
+              <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Sawal Tandon</div>
+              <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Quality Assurance Tester</div>
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-col items-center justify-center pt-4'>
+              <Image src={lakshmi} alt='' />
+              <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Maha Lakshmi K</div>
+              <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Quality Assurance Tester</div>
+            </div>
+          </div>
+        </Carousel>
+        
         </div>
       </div>
       <Footer />
