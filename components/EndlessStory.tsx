@@ -98,7 +98,7 @@ const EndlessStory = () => {
         />
 
 <div className="absolute endless-text" style={{ position: "relative", zIndex: 1 }}>
-  <div className="endless font-poppins">Endless Stories</div>
+  <div className="endless font-poppins ">Endless Stories</div>
   <div className="endless-content font-poppins">
     Inspire <span>creativity</span> in kids and foster interactive,
     educational moments for families.

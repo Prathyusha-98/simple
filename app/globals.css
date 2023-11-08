@@ -516,22 +516,22 @@ body {
     font-size: 18px;
     line-height: normal;
     margin-top: 220px;
-    margin-left: 0px;
+    /* margin-left: 0px; */
   }
   .endless-content {
     font-size: 20px;
     width: 80%;
-    margin-left: 0px;
-    text-align: center;
+    /* margin-left: 0px; */
+    /* text-align: center; */
   }
   .endless-content span {
     font-size: 20px;
   }
 
   .ebutton {
-    margin-left: 0px;
+    /* margin-left: 0px; */
     padding-top: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .ebutton1,
   .ebutton2 {
