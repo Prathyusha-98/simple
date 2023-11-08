@@ -81,7 +81,7 @@ const Hero =() =>{
         <div className=' lg:hidden sm:block xs:block '>
           <div className='flex justify-center items-center'>
           <p className=' 1xl:w-[902px] sm:w-[492px] xs:w-[292px] text-[rgba(255,255,255,0.8)] text-center font-poppins 1xl:text-sm sm:text-[10px] xs:text-[10px] font-medium leading-normal'>
-          Imagine a world where technology seamlessly integrates into your daily life, making complex tasks effortless and enhancing your capabilities. That’s the vision we strive to bring to reality. 
+          Imagine a world where technology seamlessly integrates into your daily life, making complex tasks effortless and enhancing your capabilities. That&rsquo;s the vision we strive to bring to reality. 
           </p>
           </div>
           <div className='flex justify-center items-center'>
