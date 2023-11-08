@@ -57,7 +57,7 @@ const Hero =() =>{
           <p className='1xl:w-[737px] sm:w-[376px] sm:h-[110px] xs:w-[276px] xs:h-[110px] text-[#fff] text-center font-poppins 1xl:text-base xs:text-[12px] font-light leading-[28px] '>At Simple AI, we are on a mission to develop AI-driven applications that are user-friendly, accessible to all, and ultimately empower individuals to perform at their best and live better lives.</p>
         </div>
         <div className='flex justify-center items-center 1xl:mt-[69px] 1xl:mb-[330px] xs:mt-12'>
-        <a href="#unibbudy" rel="noopener noreferrer">
+        <a href="#unibuddy" rel="noopener noreferrer">
         <button className='w-[191px] h-[50px] text-center bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] rounded-[186px] flex justify-center items-center'>
             <span className='text-white text-center font-poppins text-base font-bold leading-[19px]' >Know more</span>
             <BsArrowRight className='fill-white text-[24px] font-bold ml-4' />
