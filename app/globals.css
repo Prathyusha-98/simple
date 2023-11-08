@@ -309,7 +309,6 @@ body {
 
 .slidetext h4 {
   color: #fff;
-  font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -564,7 +563,7 @@ body {
   }
   .slidetext h4 {
     color: #fff;
-    font-family: Poppins;
+    /* font-family: Poppins; */
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
