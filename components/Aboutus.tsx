@@ -119,6 +119,7 @@ const Aboutus = () => {
         <Carousel responsive={responsive}
         additionalTransfrom={0}
         arrows
+        infinite
         autoPlay={false}
         customButtonGroup={<div />}
         keyBoardControl
@@ -248,6 +249,13 @@ const Aboutus = () => {
               <Image src={lakshmi} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Maha Lakshmi K</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Quality Assurance Tester</div>
+            </div>
+          </div>
+          <div>
+            <div className='flex flex-col items-center justify-center pt-4'>
+              {/* <Image src={} alt='' /> */}
+              <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'></div>
+              <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal"></div>
             </div>
           </div>
         </Carousel>

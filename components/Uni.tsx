@@ -12,7 +12,7 @@ export default function Uni() {
 
   const writeContent = (
     <>
-    <div className='flex justify-center items-center lg:mx-12' id="unibuddy">
+    <div className='flex justify-center items-center lg:mx-12'>
       <div className='flex justify-center items-center'>
       <div className='w-[399px] h-[364px]  '>
       <div ><p className='text-white font-poppins text-base font-medium leading-normal mb-[26px]'>Simple Uni</p></div>
@@ -103,7 +103,7 @@ export default function Uni() {
   )
 
   return (
-    <div className='relative'>
+    <div className='relative' id='unibuddy'>
       <Image className='w-full 1xl:h-[772px] xl:h-[772px]' src={blue} alt='' />
       <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col'>
         <div className='flex justify-center items-center mb-12'>
