@@ -115,7 +115,7 @@ const Aboutus = () => {
           <h1>Our Team</h1>
           <h3>Meet the team transforming our AI relationship.</h3>
         </div>
-        <div className='lg:mx-24 sm:mx-0 mt-[108px]'>
+        <div className='lg:mx-24 sm:mx-0 mt-[108px] '>
         <Carousel responsive={responsive}
         additionalTransfrom={0}
         arrows
@@ -131,7 +131,7 @@ const Aboutus = () => {
         draggable
         className='h-[455px] '>
           <div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pl-[20px]'>
               <Image src={kin} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Kin Cheung</div>
               <div className="text-gray-700 text-center font-poppins text-lg font-medium leading-normal">Founder </div>
@@ -147,14 +147,14 @@ const Aboutus = () => {
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pr-[20px]'>
               <Image src={praveen} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Praveen Dommalapati</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Product Manager</div>
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center rounded-full'>
+            <div className='flex flex-col items-center justify-center rounded-full pl-[20px]'>
               <Image src={amarjeet} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Amarjeet Sandhu</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Human Resource Manager </div>
@@ -168,14 +168,14 @@ const Aboutus = () => {
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pr-[40px]'>
               <Image src={dhaval} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Dhaval Vaja</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">UX/UI Designer</div>
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pl-[40px]'>
               <Image src={vikrant} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Vikrant Singh</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Web Developer</div>
@@ -189,14 +189,14 @@ const Aboutus = () => {
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pr-[20px]'>
               <Image src={prabakar} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Prabhakar Singh</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Web Developer</div>
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pl-[20px]'>
               <Image src={manu} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Manu Goel</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Web Developer</div>
@@ -210,14 +210,14 @@ const Aboutus = () => {
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pr-[20px]'>
               <Image src={sonu} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Sonu Kumari</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">UX/UI Designer</div>
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pl-[20px]'>
               <Image src={gaurav} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Gaurav Pardhi</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">UX/UI Designer</div>
@@ -231,21 +231,21 @@ const Aboutus = () => {
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center pt-5'>
+            <div className='flex flex-col items-center justify-center pr-[20px]'>
               <Image src={lucita} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Lucita Pagado</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Social Media Manager</div>
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center mt-[-8px]'>
+            <div className='flex flex-col items-center justify-center '>
               <Image src={sawal} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Sawal Tandon</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Quality Assurance Tester</div>
             </div>
           </div>
           <div>
-            <div className='flex flex-col items-center justify-center pt-4'>
+            <div className='flex flex-col items-center justify-center '>
               <Image src={lakshmi} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Maha Lakshmi K</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Quality Assurance Tester</div>
