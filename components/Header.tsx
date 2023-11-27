@@ -14,6 +14,26 @@ export default function Header() {
   const searchparams = useSearchParams();
   const [currentPage, setCurrentPage] = useState(pathname);
 
+  const [prevScroll, setPrevScroll] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      const visible = prevScroll > currentScroll;
+
+      setVisible(visible);
+      setPrevScroll(currentScroll);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScroll, visible]);
+
+  const headerStyle = {
+    transition: 'top 0.3s',
+    top: visible ? '0' : '-100px'
+  };
+
   useEffect(() => {
     const handleClick = (e: any) => {
       if (openmenu) {
@@ -35,7 +55,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 bg-transparent px-8 mt-4 lg:block sm:hidden xs:hidden max-w-full">
+      <header className="fixed top-0 left-0 right-0 bg-transparent px-8 mt-4 lg:block sm:hidden xs:hidden max-w-full" style={headerStyle}>
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
