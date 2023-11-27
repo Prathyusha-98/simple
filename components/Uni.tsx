@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
-import learn from '@/assets/learn.png'
-import write from "@/assets/write.png"
-import present from "@/assets/present.png"
+import SimpleLearn from '@/assets/SimpleLearn.svg'
+import SimplePresent from "@/assets/SimplePresent.svg"
+import SimpleWrite from "@/assets/SimpleWrite.svg"
 import blue from '@/assets/blue.png'
 import arrow from '@/assets/arrow.png'
 import logo from '@/assets/logo.png'
@@ -42,7 +42,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] ' src={write} alt='Learn' />
+      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] rounded-xl'  src={SimpleWrite} alt='Learn' width={0} height={0} />
       </div>
     </div>
     </>
@@ -67,7 +67,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] ' src={learn} alt='Learn' />
+      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] rounded-xl' src={SimpleLearn} alt='Learn'  width={0} height={0} />
       </div>
     </div>
     </>
@@ -96,7 +96,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] ' src={present} alt='Learn' />
+      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] rounded-xl' src={SimplePresent} alt='Learn'  width={0} height={0} />
       </div>
     </div>
     </>
