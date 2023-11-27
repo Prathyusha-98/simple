@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import sl from '@/assets/sl.png'
-import sw from "@/assets/sw.png"
-import sp from "@/assets/sp.png"
+import SimpleLearn from '@/assets/SimpleLearn.svg'
+import SimplePresent from "@/assets/SimplePresent.svg"
+import SimpleWrite from "@/assets/SimpleWrite.svg"
 import blue from '@/assets/blue.png'
 import arrow from '@/assets/arrow.png'
 import logo from '@/assets/logo.png'
@@ -15,7 +15,7 @@ const Unimobile = ()=>{
       <>
         <div className=''>
             <div className='flex justify-center items-center'>
-            <Image className='' src={sw} alt='Learn' />
+            <Image className='w-[319.25px] h-[235px] rounded-xl border-solid border-2 border-gray-400' src={SimpleLearn} alt='Learn' />
             </div>
             <div className='flex flex-col justify-center items-center mt-6'>
             <div className='flex flex-col justify-center items-center text-center '><p className='text-white font-montserrat text-xl font-bold leading-normal w-[257px] '>Different writing <span className='bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] text-transparent'>Styles</span> for better output</p></div>
@@ -28,7 +28,7 @@ const Unimobile = ()=>{
       <>
         <div className=''>
             <div className='flex justify-center items-center'>
-            <Image className='' src={sl} alt='Learn' />
+            <Image className='w-[319.25px] h-[235px] rounded-xl border-solid border-2 border-gray-400' src={SimpleLearn} alt='Learn' />
             </div>
             <div className='flex flex-col justify-center items-center mt-6'>
             <div className='flex flex-col justify-center items-center text-center '><p className='text-white font-montserrat text-xl font-bold leading-normal w-[257px] '>Summarized and Explained with <span className='bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] text-transparent'>Learn</span> feature</p></div>
@@ -41,7 +41,7 @@ const Unimobile = ()=>{
       <>
         <div className=''>
             <div className='flex justify-center items-center'>
-            <Image className='' src={sp} alt='Learn' />
+            <Image className='w-[319.25px] h-[235px] rounded-xl border-solid border-2 border-gray-400' src={SimplePresent} alt='Present' />
             </div>
             <div className='flex flex-col justify-center items-center mt-6'>
             <div className='flex flex-col justify-center items-center text-center '><p className='text-white font-montserrat text-xl font-bold leading-normal w-[257px] '>Generate quick <span className='bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] text-transparent'>Presentation</span> from pointers</p></div>

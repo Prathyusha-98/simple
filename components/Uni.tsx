@@ -42,7 +42,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] rounded-xl'  src={SimpleWrite} alt='Learn' width={0} height={0} />
+      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] border-solid border-2 border-gray-400 rounded-xl'  src={SimpleWrite} alt='Learn' width={0} height={0} />
       </div>
     </div>
     </>
@@ -67,7 +67,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] rounded-xl' src={SimpleLearn} alt='Learn'  width={0} height={0} />
+      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] border-solid border-2 border-gray-400 rounded-xl' src={SimpleLearn} alt='Learn'  width={0} height={0} />
       </div>
     </div>
     </>
@@ -96,7 +96,7 @@ export default function Uni() {
       </div>
       </div>
       <div className=''>
-      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] rounded-xl' src={SimplePresent} alt='Learn'  width={0} height={0} />
+      <Image className='lg:w-[584px] xl:w-[625px] 1xl:w-[625px] 2xl:w-[625px] 3xl:w-[625px] border-solid border-2 border-gray-400 rounded-xl' src={SimplePresent} alt='Learn'  width={0} height={0} />
       </div>
     </div>
     </>
