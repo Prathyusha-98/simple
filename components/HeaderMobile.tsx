@@ -1,30 +1,38 @@
-"use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import logo from '@/assets/logo.png';
+import { useRouter } from 'next/router';
 
-export default function Header() {
+export default function HeaderMobile() {
   const [openmenu, setOpenmenu] = useState(false);
+  const [hideOnScroll, setHideOnScroll] = useState(false);
+  const menuRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    const handleClick = (e: any) => {
-      if (openmenu) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setOpenmenu(false);
       }
     };
 
-    document.addEventListener("click", handleClick);
+    const handleScroll = () => {
+      setHideOnScroll(window.pageYOffset > 50);
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      document.removeEventListener("click", handleClick);
+      document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, [openmenu]);
+  }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 bg-transparent lg:hidden sm:block xs:block ${openmenu ? 'z-20' : 'z-10'}`}>
-      <div className="flex justify-between items-center px-8">
+    <header ref={menuRef} className={`fixed top-0 left-0 right-0 lg:hidden sm:block ${openmenu ? 'z-20' : 'z-10'} ${hideOnScroll ? 'hidden' : ''}`}>
+      <div className="flex justify-between items-center px-8 pt-3">
         <div className="flex items-center">
           <Link href="/">
             <button>
@@ -44,7 +52,7 @@ export default function Header() {
             <Link href="/">Home</Link>
           </li>
           <li className="my-4">
-            <Link href="/about">About Us</Link>
+            <Link href="/aboutus"><button>About us</button></Link>
           </li>
           <li className="my-4">
             <Link href="/contact">Contact</Link>

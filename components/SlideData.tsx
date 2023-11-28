@@ -6,6 +6,7 @@ import SlideBG from "../assets/slidebg.svg";
 import forward from "../assets/forward.svg";
 import backward from "../assets/backward.svg";
 import Laptop from "../assets/laptop.svg";
+import Link from "next/link";
 
 const SlideData = () => {
   const textData = [
@@ -42,9 +43,9 @@ const SlideData = () => {
       
       
       <div className="laptop absolute flex flex-col lg:flex-row">
-      <div className="mobile-title">
+      <div className="mobile-title ">
     
-            <h4 className="font-poppins">{currentSlide.title}</h4>
+            <p className="font-poppins text-white">{currentSlide.title}</p>
           </div>
     
         <div className="slideimage">
@@ -52,8 +53,8 @@ const SlideData = () => {
         </div>
 
         <div className="slidetext ">
-          <div id="textContainer">
-            <h4 className="font-poppins">{currentSlide.title}</h4>
+          <div id="">
+            <h4 className="font-poppins text-lg text-white" >{currentSlide.title}</h4>
 
             <h2 >
               {currentSlide.description.split(' ').map((word, wordIndex) => {
@@ -83,8 +84,12 @@ const SlideData = () => {
 } )}</h2>
             
             <div className="slidebutton text-white ">
+              <Link href="https://play.google.com/store/apps/details?id=com.simplyspeak">
               <button className="slidebutton1 mr-4">Try For Free</button>
+              </Link>
+              <Link href="https://play.google.com/store/apps/details?id=com.simplyspeak">
               <button className="slidebutton2">Learn More</button>
+              </Link>
             </div>
           </div>
 

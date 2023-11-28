@@ -150,6 +150,15 @@ body {
   margin-top: 410px;
   margin-left: 88px;
 }
+.endless-mobile {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 180px;
+  /* display: flex; */
+}
 .endless-content {
   width: 450px;
   color: #dfdfdf;
@@ -161,6 +170,15 @@ body {
   padding-top: 24px;
 }
 
+
+.endless-contentmob {
+  color: #dfdfdf;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 20px;
+}
 .endless-content span {
   background: linear-gradient(54deg, #4ea0fb 0%, #9354f7 49.98%, #d70bf4 100%);
   background-clip: text;
@@ -171,8 +189,21 @@ body {
   font-weight: 700;
   line-height: normal;
 }
+.endless-contentmob span {
+  background: linear-gradient(54deg, #4ea0fb 0%, #9354f7 49.98%, #d70bf4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 .ebutton {
   margin-left: 88px;
+  padding-top: 22px;
+}
+.ebutton-mob{
   padding-top: 22px;
 }
 .ebutton1 {
@@ -191,6 +222,12 @@ body {
   border-radius: 22px;
   border: solid 0.1px;
 }
+
+.ebutton1,
+.ebutton2 {
+  cursor: pointer;
+}
+
 
 /* Banner */
 
@@ -504,30 +541,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-items: center;
-    justify-content: center;
     background: linear-gradient(180deg, #240241 0%, #200240 100%);
   }
   .endless {
     font-size: 18px;
     line-height: normal;
     margin-top: 220px;
-    margin-left: 0px;
+    /* margin-left: 0px; */
   }
   .endless-content {
     font-size: 20px;
     width: 80%;
-    margin-left: 0px;
-    text-align: center;
+    /* margin-left: 0px; */
+    /* text-align: center; */
   }
   .endless-content span {
     font-size: 20px;
   }
 
   .ebutton {
-    margin-left: 0px;
+    /* margin-left: 0px; */
     padding-top: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   .ebutton1,
   .ebutton2 {
@@ -687,15 +722,7 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .mobile-title h4 {
-    margin-left: 35px;
-    color: #fff;
-    text-align: center;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+
   .stories {
     display: none;
   }
@@ -785,4 +812,30 @@ body {
   .slidetext {
     margin-left: 12px;
   }
+  
 }
+
+
+.transition-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+}
+
+.transition-text {
+ 
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+

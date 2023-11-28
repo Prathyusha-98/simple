@@ -75,8 +75,8 @@ const contact = () => {
         </div>
 
         <div className="text-white text-center pt-8 clinks">
-          <span className="text-md pr-14">About Us</span>
-          <span className="text-md">Contact Us</span>
+          <Link href='/aboutus' className="text-md pr-14">About Us</Link>
+          <Link href='/contact' className="text-md">Contact Us</Link>
         </div>
 
         <div className="pt-6 text-center contacttextbox text-white">
