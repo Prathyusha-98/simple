@@ -31,7 +31,7 @@ export default function HeaderMobile() {
   }, []);
 
   return (
-    <header ref={menuRef} className={`fixed top-0 left-0 right-0 bg-transparent lg:hidden sm:block ${openmenu ? 'z-20' : 'z-10'} ${hideOnScroll ? 'hidden' : ''}`}>
+    <header ref={menuRef} className={`fixed top-0 left-0 right-0 lg:hidden sm:block ${openmenu ? 'z-20' : 'z-10'} ${hideOnScroll ? 'hidden' : ''}`}>
       <div className="flex justify-between items-center px-8 pt-3">
         <div className="flex items-center">
           <Link href="/">

@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
-import { useSpring, animated } from "react-spring";
 import Image from "next/image";
 import screen from "@/assets/screen.png";
 import { BsArrowRight, BsArrowUpRight } from "react-icons/bs";
@@ -34,7 +33,7 @@ import StoryBG from "../assets/endlessbgg.svg";
 import StoryBook from "../assets/man.svg";
 import StoryR from "../assets/StoryRes.svg";
 import GIF from "../assets/story.gif";
-import { remove } from "firebase/database";
+
 
 const Hero = () => {
   const [animatedText, setAnimatedText] = useState("");
@@ -97,7 +96,7 @@ const Hero = () => {
   return (
     <>
       <div className="relative">
-        <video
+        <Video
           className="w-full xs:hidden sm:hidden lg:block"
           autoPlay
           loop
@@ -105,8 +104,8 @@ const Hero = () => {
           playsInline
         >
           <source src="hero.mp4" type="video/mp4" />
-        </video>
-        <video
+        </Video>
+        <Video
           className="w-full xs:block sm:block lg:hidden"
           autoPlay
           loop
@@ -114,7 +113,7 @@ const Hero = () => {
           playsInline
         >
           <source src="Mobile.mp4" type="video/mp4" />
-        </video>
+        </Video>
         {/* <Image className='w-full xs:block sm:block lg:hidden' src={small} alt='' /> */}
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center">
           <div className="lg:block sm:hidden xs:hidden pt-12">
