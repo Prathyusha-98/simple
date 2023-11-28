@@ -7,7 +7,7 @@ import Header from "./Header";
 import arrow from "@/assets/arrow.png";
 import blue from "@/assets/blue.png";
 import violet from "@/assets/violet.png";
-import mobile from "@/assets/mobile.png";
+import NEETAIBOT from "@/assets/NEETAIBOT.svg";
 import hand from "@/assets/hand.png";
 import Uni from "./Uni";
 import Unimobile from "./Unimobile";
@@ -19,7 +19,7 @@ import EndlessStory from "./EndlessStory";
 import SlideData from "./SlideData";
 import Banner from "./Banner";
 import Contact from "./Contact";
-import what from "@/assets/what.png";
+import telegram from "@/assets/telegram.png";
 import neetlogo from "@/assets/neetlogo.png";
 import small from "@/assets/small.png";
 import ContactBG from "../assets/bgcontact.svg";
@@ -150,7 +150,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#0D0037] h-[380px] xs:h-[380px] sm:h-[380px] pt-14 shadow-[#0D0037] shadow-lg  ">
+      <div className="bg-[#0D0037] h-[380px] xs:h-[480px] sm:h-[380px] pt-14 shadow-[#0D0037] shadow-lg  ">
         <div className="flex justify-center items-center ">
           <p className="1xl:w-[828px] sm:w-[486px] xs:w-[286px] text-white text-center font-montserrat 1xl:text-[50px] sm:text-[30px] xs:text-[20px] font-semibold leading-normal">
             Unleashing the Power of AI, Simplified
@@ -221,11 +221,11 @@ const Hero = () => {
           />
           <Image
             className="absolute lg:top-[351px] lg:left-[323px] xl:top-[351px] xl:left-[429px] 1xl:top-[351px] 1xl:left-[529px] 2xl:top-[351px] 2xl:left-[609px] 3xl:top-[351px] 3xl:left-[689px] w-[80px] h-[80px] "
-            src={what}
+            src={telegram}
             alt=""
           />
           <div className="flex justify-center items-center">
-            <Image src={mobile} alt="" />
+            <Image className="w-[352px] h-[420px] " src={NEETAIBOT} alt="" />
             <div className="ml-[139px]">
               <div className="flex ">
                 <p className="text-white font-poppins text-lg font-medium leading-normal">

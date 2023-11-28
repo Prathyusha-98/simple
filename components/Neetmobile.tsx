@@ -1,7 +1,7 @@
 import React from 'react'
 import violetmobile from '@/assets/violetmobile.png'
 import NEETAIBOT from '@/assets/NEETAIBOT.svg'
-import what from '@/assets/what.png'
+import telegram from '@/assets/telegram.png'
 import neetlogo from '@/assets/neetlogo.png'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -28,7 +28,7 @@ const Neetmobile = () => {
                 <div className='mx-12' ><Image src={NEETAIBOT} alt='' /></div>
             </div>
             <Image className='absolute top-[385px] left-8 w-[45px] h-[45px] ' src={neetlogo} alt=''/>
-            <Image className='absolute top-[581px] left-[309px] w-[45px] h-[45px] ' src={what} alt=''/>
+            <Image className='absolute top-[581px] left-[309px] w-[45px] h-[45px] ' src={telegram} alt=''/>
             </div>
         </>
     )
