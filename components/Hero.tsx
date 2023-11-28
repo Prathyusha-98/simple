@@ -7,7 +7,7 @@ import Header from './Header'
 import arrow from '@/assets/arrow.png'
 import blue from '@/assets/blue.png'
 import violet from '@/assets/violet.png'
-import mobile from '@/assets/mobile.png'
+import NEETAIBOT from '@/assets/NEETAIBOT.svg'
 import hand from '@/assets/hand.png'
 import Uni from './Uni'
 import Unimobile from './Unimobile'
@@ -108,7 +108,7 @@ const Hero =() =>{
           <Image className='absolute lg:top-[180px] lg:left-[0px] xl:top-[110px] xl:left-[103px] 1xl:top-[110px] 1xl:left-[173px] 2xl:top-[110px] 2xl:left-[223px] 3xl:top-[110px] 3xl:left-[323px] w-[80px] h-[80px] ' src={neetlogo} alt=''/>
           <Image className='absolute lg:top-[351px] lg:left-[323px] xl:top-[351px] xl:left-[429px] 1xl:top-[351px] 1xl:left-[529px] 2xl:top-[351px] 2xl:left-[609px] 3xl:top-[351px] 3xl:left-[689px] w-[80px] h-[80px] ' src={what} alt=''/>
         <div className='flex justify-center items-center'>
-            <Image src={mobile} alt='' />
+            <Image className='w-[352px] h-[420px] ' src={NEETAIBOT} alt='' />
             <div className='ml-[139px]'>
                 <div className='flex '><p className='text-white font-poppins text-lg font-medium leading-normal'>NEET AI Tutor</p></div>
                 <div className='flex justify-center items-center my-[26px] '><p className='w-[487px] text-white font-montserrat text-[30px] font-extrabold leading-normal'>Effortless <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4]'>NEET learning</span> at your fingertips, AI Chat companion on WhatsApp!</p></div>
