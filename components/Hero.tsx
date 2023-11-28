@@ -32,7 +32,6 @@ import Footer from "./Footer";
 import StoryBG from "../assets/endlessbgg.svg";
 import StoryBook from "../assets/man.svg";
 import StoryR from "../assets/StoryRes.svg";
-import GIF from "../assets/story.gif";
 
 
 const Hero = () => {
