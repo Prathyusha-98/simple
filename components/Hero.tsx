@@ -121,7 +121,7 @@ const Hero = () => {
           <div className="lg:hidden sm:block xs:block pt-12">
             <HeaderMobile />
           </div>
-          <div className="transition-paragraph lg:block sm:hidden xs:hidden">
+          <div className="transition-paragraph lg:block sm:hidden xs:hidden" style={{height: '4rem'}}>
             <p className="transition-text text-white text-6xl font-bold">
               {animatedText}
             </p>
@@ -132,7 +132,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="mt-5 lg:block sm:hidden xs:hidden">
+          <div className="mt-5 lg:block sm:hidden xs:hidden" style={{height: '4rem'}}>
             <h1 className="text-white font-bold text-5xl">{animatedWords}</h1>
           </div>
           <div className="mt-3 lg:hidden sm:block xs:block mx-6 text-center">
