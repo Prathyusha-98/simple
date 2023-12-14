@@ -14,7 +14,7 @@ import lucita from '@/assets/Lucita.png'
 import sawal from '@/assets/Sawal.png'
 import lakshmi from '@/assets/MahaLakshmi.png'
 import vikrant from '@/assets/vikrant.png';
-import prathyu from '@/assets/prathyu.png';
+import pra from '@/assets/pra.jpg';
 import sohail from '@/assets/sohail.png';
 import manu from '@/assets/manu.png';
 import prabakar from '@/assets/prabakar.png';
@@ -135,7 +135,7 @@ const Aboutus = () => {
               <Image src={kin} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Kin Cheung</div>
               <div className="text-gray-700 text-center font-poppins text-lg font-medium leading-normal">Founder </div>
-              <div className="w-[240px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Founded 4 Successful Companies Co-founder of a Multimillionaire dollar business</div>
+              <div className="w-[240px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Founded 4 Successful Companies Co-founder of a Multimillion-dollar Company</div>
             </div>
           </div>
           <div>
@@ -143,7 +143,7 @@ const Aboutus = () => {
               <Image src={hena} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Heena Sinha</div>
               <div className="text-gray-700 text-center font-poppins text-lg font-medium leading-normal">Co-Founder </div>
-              <div className="w-[197px] h-[42px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Co-founder of a Multimillionaire dollar business</div>
+              <div className="w-[197px] h-[42px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Co-founder of a Multimillion-dollar Company</div>
             </div>
           </div>
           <div>
@@ -183,7 +183,7 @@ const Aboutus = () => {
           </div>
           <div>
             <div className='flex flex-col items-center justify-center'>
-              <Image src={prathyu} alt='' />
+              <Image className='w-[255px] h-[255px] rounded-full' src={pra} alt='' />
               <div className='pt-5 text-black text-center font-poppins text-lg font-medium leading-normal'>Prathyusha Ponnaganti</div>
               <div className="w-[224px] h-[63px] pt-4 text-gray-700 text-center font-poppins text-base font-medium leading-normal">Web Developer</div>
             </div>
