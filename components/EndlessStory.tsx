@@ -99,17 +99,17 @@ const EndlessStory = () => {
 
 <div className="absolute endless-text lg:block hidden " style={{ position: "relative", zIndex: 1 }}>
   <div className="endless font-poppins ">Endless Stories</div>
-  <div className="endless-content font-poppins">
+  <div className="endless-content font-montserrat">
     Inspire <span>creativity</span> in kids and foster interactive,
     educational moments for families.
   </div>
   <div className="flex ebutton">
-    <Link href="https://stories.thesimpleai.com" target="_blank">
+    <Link href="https://stories.thesimpleai.com" target="_self">
     <button className="ebutton1 text-white rounded-md mr-4">
       Try For Free
     </button>
     </Link>
-    <Link href="https://stories.thesimpleai.com/#how" target="_blank">
+    <Link href="https://stories.thesimpleai.com/#how" target="_self">
     <button className="ebutton2 text-white rounded-md">
       Learn More
     </button>
@@ -124,12 +124,12 @@ const EndlessStory = () => {
     educational moments for families.
   </div>
   <div className="flex ebutton-mob justify-center">
-    <Link href="https://stories.thesimpleai.com" target="_blank">
+    <Link href="https://stories.thesimpleai.com" target="_self">
     <button className="ebutton1 text-white rounded-md mr-4">
       Try For Free
     </button>
     </Link>
-    <Link href="https://stories.thesimpleai.com/#how" target="_blank">
+    <Link href="https://stories.thesimpleai.com/#how" target="_self">
     <button className="ebutton2 text-white rounded-md">
       Learn More
     </button>

@@ -138,8 +138,18 @@ const Hero = () => {
           <div className="mt-3 lg:hidden sm:block xs:block mx-6 text-center">
             <h1 className="text-white font-bold text-4xl">{animatedWords}</h1>
           </div>
-          <div className="flex justify-center items-center   xs:mt-12 ">
-            <a href="#unibuddy" rel="noopener noreferrer">
+          <div className="flex justify-center items-center lg:block sm:hidden xs:hidden ">
+            <a href="#uni" rel="noopener noreferrer">
+              <button className="w-[191px] h-[50px] text-center bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] rounded-[186px] flex justify-center items-center">
+                <span className="text-white text-center font-poppins text-base font-bold leading-[19px]">
+                  Know more
+                </span>
+                <BsArrowRight className="fill-white text-[24px] font-bold ml-4" />
+              </button>
+            </a>
+          </div>
+          <div className="flex justify-center items-center lg:hidden sm:block xs:block xs:mt-12 ">
+            <a href="#unimobile" rel="noopener noreferrer">
               <button className="w-[191px] h-[50px] text-center bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] rounded-[186px] flex justify-center items-center">
                 <span className="text-white text-center font-poppins text-base font-bold leading-[19px]">
                   Know more
@@ -200,10 +210,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" lg:block sm:hidden xs:hidden">
+      <div id="uni" className=" lg:block sm:hidden xs:hidden">
         <Uni />
       </div>
-      <div className=" lg:hidden sm:block xs:block">
+      <div id="uni" className=" lg:hidden sm:block xs:block">
         <Unimobile />
       </div>
 
@@ -228,12 +238,12 @@ const Hero = () => {
             <Image className="w-[352px] h-[420px] " src={NEETAIBOT} alt="" />
             <div className="ml-[139px]">
               <div className="flex ">
-                <p className="text-white font-poppins text-lg font-medium leading-normal">
+                <p className="text-white font-poppins text-[18px] font-medium leading-normal">
                   NEET AI Tutor
                 </p>
               </div>
               <div className="flex justify-center items-center my-[26px] ">
-                <p className="w-[487px] text-white font-montserrat text-[30px] font-extrabold leading-normal">
+                <p className="w-[487px] pr-12 text-white font-montserrat text-[30px] font-bold leading-normal">
                   Effortless{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4]">
                     NEET learning
@@ -245,7 +255,7 @@ const Hero = () => {
                 <Link
                   href="https://neetaitutor.thesimpleai.com/signup"
                   className=""
-                  target="_blank"
+                  target="_self"
                 >
                   <button className=" ebutton1  text-white rounded-md mr-4">
                     Try For Free
@@ -254,7 +264,7 @@ const Hero = () => {
                 <Link
                   href="https://neetaitutor.thesimpleai.com/"
                   className=""
-                  target="_blank"
+                  target="_self"
                 >
                   <button className="ebutton2 text-white rounded-md">
                     Learn More

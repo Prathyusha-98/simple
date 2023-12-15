@@ -3,7 +3,7 @@ import Image from 'next/image'
 import SimpleLearn from '@/assets/SimpleLearn.svg'
 import SimplePresent from "@/assets/SimplePresent.svg"
 import SimpleWrite from "@/assets/SimpleWrite.svg"
-import blue from '@/assets/blue.png'
+import unimbg from '@/assets/unimbg.png'
 import arrow from '@/assets/arrow.png'
 import logo from '@/assets/logo.png'
 import Link from 'next/link'
@@ -51,8 +51,8 @@ const Unimobile = ()=>{
     )
   
     return (
-      <div className='relative'>
-        <Image className='w-full sm:h-[620px] xs:h-[620px]' src={blue} alt='' />
+      <div id='unimobile' className='relative'>
+        <Image className='w-full sm:h-[620px] xs:h-[620px]' src={unimbg} alt='' />
         <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col'>
           <div className='pb-12' ><p className='text-gray-300 text-lg font-normal leading-normal text-center font-poppins'>Simple Uni</p></div>
           <div className='pb-12 w-[294px]'><p className='text-gray-300 text-xs font-normal leading-normal text-center font-poppins'>A powerhouse web application empowering users to excel in writing, learning, and presenting.</p></div>

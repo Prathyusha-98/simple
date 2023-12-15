@@ -34,7 +34,7 @@ const contact = () => {
                 name=""
                 placeholder="Your Email"
                 required
-                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0 w-[320px] lg:w-[684px]"
               />
               <span></span>
             </label>
@@ -45,7 +45,7 @@ const contact = () => {
                 type="text"
                 name=""
                 required
-                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0 w-[320px] lg:w-[684px]"
                 placeholder="Name"
               />
               <span></span>
@@ -56,7 +56,7 @@ const contact = () => {
               <textarea
                 rows={6}
                 cols={40}
-                className="inputm resize-none inputw sm:mb-0 xs:mb-0"
+                className="inputm resize-none inputw sm:mb-0 xs:mb-0 w-[320px] lg:w-[684px]"
                 placeholder="
             Message"
                 required

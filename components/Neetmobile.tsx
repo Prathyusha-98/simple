@@ -14,12 +14,12 @@ const Neetmobile = () => {
                 <div className='pt-20' ><p className='text-white font-poppins text-lg font-medium leading-normal'>NEET AI Tutor</p></div>
                 <div className='py-10'><p className='w-[289px] text-white font-montserrat text-[20px] font-extrabold leading-normal'>Effortless <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4]'>NEET learning</span> at your fingertips, AI Chat companion on WhatsApp!</p></div>
                 <div className="flex nbutton pb-6">
-                <Link href="https://neetaitutor.thesimpleai.com/signup" className='' target='_blank'>
+                <Link href="https://neetaitutor.thesimpleai.com/signup" className='' target='_self'>
             <button className=" ebutton1  text-white rounded-md mr-4">
               Try For Free
             </button>
             </Link>
-            <Link href="https://neetaitutor.thesimpleai.com/" className='' target='_blank'>
+            <Link href="https://neetaitutor.thesimpleai.com/" className='' target='_self'>
             <button className="ebutton2 text-white rounded-md">
               Learn More
             </button>

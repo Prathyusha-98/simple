@@ -45,7 +45,7 @@ const SlideData = () => {
       <div className="laptop absolute flex flex-col lg:flex-row">
       <div className="mobile-title ">
     
-            <p className="font-poppins text-white">{currentSlide.title}</p>
+            <p className="font-poppins text-[18px] text-white">{currentSlide.title}</p>
           </div>
     
         <div className="slideimage">
@@ -56,7 +56,7 @@ const SlideData = () => {
           <div id="">
             <h4 className="font-poppins text-lg text-white" >{currentSlide.title}</h4>
 
-            <h2 >
+            <h2 className="text-white font-montserrat text-3xl font-bold leading-normal">
               {currentSlide.description.split(' ').map((word, wordIndex) => {
             if (word.toLowerCase() === 'multilingual'){
               return(
@@ -84,10 +84,10 @@ const SlideData = () => {
 } )}</h2>
             
             <div className="slidebutton text-white ">
-              <Link href="https://play.google.com/store/apps/details?id=com.simplyspeak">
+              <Link href="https://play.google.com/store/apps/details?id=com.simplyspeak" target="_self">
               <button className="slidebutton1 mr-4">Try For Free</button>
               </Link>
-              <Link href="https://play.google.com/store/apps/details?id=com.simplyspeak">
+              <Link href="https://play.google.com/store/apps/details?id=com.simplyspeak" target="_self">
               <button className="slidebutton2">Learn More</button>
               </Link>
             </div>

@@ -20,7 +20,7 @@ const contact = () => {
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <div className="text-white max-w-lg text-center pt-10 contacttexts">
-          <p className="text-4xl font-normal font-poppins">Drop us a message and we will get back to you.</p>
+          <p className="lg:text-4xl text-2xl lg:px-0 px-14  font-normal font-poppins">Drop us a message and we will get back to you.</p>
         </div>
         <div className="pt-12 flex">
           <form action="#" method="post" id="myForm" className="text-white ">
@@ -30,7 +30,7 @@ const contact = () => {
                 name=""
                 placeholder="Your Email"
                 required
-                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0 w-[320px] lg:w-[684px]" 
               />
               <span></span>
             </label>
@@ -41,7 +41,7 @@ const contact = () => {
                 type="text"
                 name=""
                 required
-                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0"
+                className="inputw mb-7 md:mb-7 sm:mb-0 xs:mb-0 w-[320px] lg:w-[684px]"
                 placeholder="Name"
               />
               <span></span>
@@ -52,7 +52,7 @@ const contact = () => {
               <textarea
                 rows={6}
                 cols={40}
-                className="inputm resize-none inputw sm:mb-0 xs:mb-0"
+                className="inputm resize-none inputw sm:mb-0 xs:mb-0 w-[320px] lg:w-[684px]"
                 placeholder="
             Message"
                 required
@@ -71,6 +71,7 @@ const contact = () => {
         </div>
 
         <div className="text-white text-center pt-8 clinks">
+          <Link href='/' className="text-md pr-14">Home</Link>
           <Link href='/aboutus' className="text-md pr-14">About Us</Link>
           <Link href='/contact' className="text-md">Contact Us</Link>
         </div>
@@ -86,7 +87,7 @@ const contact = () => {
         <div className=" flex justify-center items-center space-x-4 pt-8">
           <Link
             href="https://www.youtube.com/@simpleai2403"
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
           >
             <Image
@@ -97,14 +98,14 @@ const contact = () => {
           </Link>
           <Link
             href="https://twitter.com/"
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
           >
             <Image src={twitter} alt="Twitter" className="w-6 h-6" />
           </Link>
           <Link
             href="https://www.instagram.com/"
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
           >
             <Image
@@ -115,7 +116,7 @@ const contact = () => {
           </Link>
           <Link
             href="https://www.linkedin.com/company/simple-ai-powered/"
-            target="_blank"
+            target="_self"
             rel="noopener noreferrer"
           >
             <Image

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import logo from '@/assets/logo.png';
+import logom from '@/assets/logom.png';
 import { useRouter } from 'next/router';
 
 export default function HeaderMobile() {
@@ -36,25 +36,25 @@ export default function HeaderMobile() {
         <div className="flex items-center">
           <Link href="/">
             <button>
-              <Image src={logo} alt="Logo" className="w-[66px] h-[66px]" />
+              <Image src={logom} alt="Logo" className="w-[38px] h-[38px]" />
             </button>
           </Link>
         </div>
         <div className="flex items-center">
           <button onClick={() => setOpenmenu(!openmenu)} className="text-3xl cursor-pointer">
-            <GiHamburgerMenu className="fill-white w-10 h-8" name={openmenu ? 'close' : 'menu'} />
+            <GiHamburgerMenu className="fill-white w-[20px] h-[14px]" name={openmenu ? 'close' : 'menu'} />
           </button>
         </div>
       </div>
       {openmenu && (
-        <ul className="fixed top-[76px] bg-white w-full h-[calc(100vh-76px)] z-10 p-4 shadow-md overflow-y-auto">
-          <li className="my-4">
+        <ul className="fixed top-[0px] bg-white w-[80%] h-[calc(100vh-76px)] z-10 p-4 shadow-md overflow-y-auto">
+          <li className="my-4 hover:border-solid hover:border-b hover:border-[#0D0037] hover:shadow-sm hover:shadow-[#0D0037] p-4">
             <Link href="/">Home</Link>
           </li>
-          <li className="my-4">
+          <li className="my-4 hover:border-solid hover:border-b hover:border-[#0D0037] hover:shadow-sm hover:shadow-[#0D0037] p-4">
             <Link href="/aboutus"><button>About us</button></Link>
           </li>
-          <li className="my-4">
+          <li className="my-4 hover:border-solid hover:border-b hover:border-[#0D0037] hover:shadow-sm hover:shadow-[#0D0037] p-4">
             <Link href="/contact">Contact</Link>
           </li>
         </ul>

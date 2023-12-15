@@ -15,8 +15,8 @@ export default function Uni() {
     <div className='flex justify-center items-center lg:mx-12'>
       <div className='flex justify-center items-center'>
       <div className='w-[399px] h-[364px]  '>
-      <div ><p className='text-white font-poppins text-base font-medium leading-normal mb-[26px]'>Simple Uni</p></div>
-      <div ><p className='text-white font-montserrat text-3xl font-bold leading-normal w-[399px] h-[111px] mb-[24px] pr-[100px] '>Different writing <span className='bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] text-transparent'>Styles</span> for better output</p></div>
+      <div ><p className='text-white font-poppins text-[18px] font-medium leading-normal mb-[26px]'>Simple Uni</p></div>
+      <div ><p className='text-white font-montserrat text-[30px] font-bold leading-normal w-[399px] h-[111px] mb-[24px] pr-[100px] '>Different writing <span className='bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] text-transparent'>Styles</span> for better output</p></div>
       <div ><p className='text-white text-opacity-50 font-poppins text-sm font-normal leading-normal w-[314px] h-[72px] pr-[24px]'>A powerhouse web application empowering users to excel in writing, learning, and presenting.</p></div>
       {/* <div className="flex items-center mt-[32px]">
         <Link className='mr-2' href="/">
@@ -53,14 +53,14 @@ export default function Uni() {
     <div className='flex justify-center items-center lg:mx-12'>
       <div className='flex justify-center items-center'>
       <div className='w-[399px] h-[364px]  '>
-      <div ><p className='text-white font-poppins text-base font-medium leading-normal mb-[26px]'>Simple Uni</p></div>
+      <div ><p className='text-white font-poppins text-[18px] font-medium leading-normal mb-[26px]'>Simple Uni</p></div>
       <div ><p className='text-white font-montserrat text-3xl font-bold leading-normal w-[399px] h-[111px] mb-[38px] pr-[100px] '>Summarized and Explained with <span className='bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] text-transparent'>Learn</span> feature</p></div>
       <div ><p className='text-white text-opacity-50 font-poppins text-sm font-normal leading-normal w-[314px] h-[72px] pr-[24px]'>A powerhouse web application empowering users to excel in writing, learning, and presenting.</p></div>
       <div className="flex items-center mt-[32px]">
-        <Link className='mr-2' href="https://uni.thesimpleai.com/editor/learn/" target='_blank'>
+        <Link className='mr-2' href="https://uni.thesimpleai.com/editor/learn/" target='_self'>
           <button className="w-[143px] h-[44px] flex-shrink-0 rounded-[22px] bg-[rgba(255,255,255,0.2)]"><p className='text-white text-center font-montserrat text-base font-medium leading-normal'>Try For Free</p></button>
         </Link>
-        <Link className='ml-2' href="https://uni.thesimpleai.com/">
+        <Link className='ml-2' href="https://uni.thesimpleai.com/" target='_self'>
           <button className="w-[130px] h-[44px] flex-shrink-0 rounded-[22px] border border-[rgba(255,255,255,0.7)]"><p className='text-white text-center font-montserrat text-base font-medium leading-normal'>Learn More</p></button>
         </Link>
       </div>
@@ -78,7 +78,7 @@ export default function Uni() {
     <div className='flex justify-center items-center lg:mx-12'>
       <div className='flex justify-center items-center'>
       <div className='w-[399px] h-[364px]  '>
-      <div ><p className='text-white font-poppins text-base font-medium leading-normal mb-[26px]'>Simple Uni</p></div>
+      <div ><p className='text-white font-poppins text-[18px] font-medium leading-normal pb-[26px]'>Simple Uni</p></div>
       <div ><p className='text-white font-montserrat text-3xl font-bold leading-normal w-[399px] h-[111px] mb-[38px] pr-[100px] '>Generate quick <span className='bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4] text-transparent'>Presentation</span> from pointers</p></div>
       <div ><p className='text-white text-opacity-50 font-poppins text-sm font-normal leading-normal w-[314px] h-[72px] pr-[24px]'>A powerhouse web application empowering users to excel in writing, learning, and presenting.</p></div>
       <div className="flex ubutton mt-6">
@@ -103,7 +103,7 @@ export default function Uni() {
   )
 
   return (
-    <div className='relative' id='unibuddy'>
+    <div className='relative' id='uni'>
       <Image className='w-full 1xl:h-[772px] xl:h-[772px]' src={blue} alt='' />
       <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col'>
         <div className='flex justify-center items-center mb-12'>
