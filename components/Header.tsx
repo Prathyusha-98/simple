@@ -92,6 +92,15 @@ export default function Header() {
                 Contact
               </button>
             </Link>
+            <Link href="/privacy">
+              <button
+                className={`${
+                  currentPage === '/contact' ? 'text-white' : 'text-[#999C9C]'
+                } hover:text-white px-4 py-2 rounded-md`}
+              >
+                Privacy Policy
+              </button>
+            </Link>
           </nav>
         </div>
       </header>

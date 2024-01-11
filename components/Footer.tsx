@@ -70,10 +70,11 @@ const contact = () => {
           </form>
         </div>
 
-        <div className="text-white text-center pt-8 clinks">
-          <Link href='/' className="text-md pr-14">Home</Link>
-          <Link href='/aboutus' className="text-md pr-14">About Us</Link>
-          <Link href='/contact' className="text-md">Contact Us</Link>
+        <div className="text-white  text-center pt-8 clinks">
+          <Link href='/' className="lg:text-base text-[12px] lg:pr-14 pr-4">Home</Link>
+          <Link href='/aboutus' className="lg:text-base text-[12px] lg:pr-14 pr-4">About Us</Link>
+          <Link href='/contact' className="lg:text-base text-[12px] lg:pr-14 pr-4">Contact Us</Link>
+          <Link href='/privacy' className="lg:text-base text-[12px]">Privacy Policy</Link>
         </div>
 
         <div className="pt-6 text-center contacttextbox text-white">
