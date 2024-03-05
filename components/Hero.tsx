@@ -248,7 +248,7 @@ const Hero = () => {
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4EA0FB] via-[#9354F7] to-[#D70BF4]">
                     NEET learning
                   </span>{" "}
-                  at your fingertips, AI Chat companion on WhatsApp!
+                  at your fingertips, AI Chat companion on Telegram!
                 </p>
               </div>
               <div className="flex nbutton">

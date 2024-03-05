@@ -92,7 +92,7 @@ export default function Header() {
                 Contact
               </button>
             </Link>
-            <Link href="/privacy">
+            {/*<Link href="/privacy">
               <button
                 className={`${
                   currentPage === '/contact' ? 'text-white' : 'text-[#999C9C]'
@@ -100,7 +100,7 @@ export default function Header() {
               >
                 Privacy Policy
               </button>
-            </Link>
+              </Link>*/}
           </nav>
         </div>
       </header>

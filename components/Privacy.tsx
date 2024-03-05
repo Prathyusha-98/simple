@@ -292,7 +292,7 @@ const Privacy = () =>{
 
                     <h2 id="eleven" className="text-xl md:text-4xl lg:text-4xl py-4">11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
                     <div className='text-sm md:text-2xl lg:text-2xl'>
-                    <p >If you have questions or comments about this notice, you may email us at Info@simplemail.ai. Êor by post to:</p>
+                    <p >If you have questions or comments about this notice, you may email us at Info@simplemail.ai.Êor by post to:</p>
                     <p >EndlessStories</p>
                     <p >37 Heatherdale Rd</p>
                     <p >Ringwood , Victoria 3134</p>

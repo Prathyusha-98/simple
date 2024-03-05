@@ -57,9 +57,9 @@ export default function HeaderMobile() {
           <li className="my-4 hover:border-solid hover:border-b hover:border-[#0D0037] hover:shadow-sm hover:shadow-[#0D0037] p-4">
             <Link href="/contact">Contact</Link>
           </li>
-          <li className="my-4 hover:border-solid hover:border-b hover:border-[#0D0037] hover:shadow-sm hover:shadow-[#0D0037] p-4">
+          {/*<li className="my-4 hover:border-solid hover:border-b hover:border-[#0D0037] hover:shadow-sm hover:shadow-[#0D0037] p-4">
             <Link href="/privacy">Privacy Policy</Link>
-          </li>
+          </li>*/}
         </ul>
       )}
     </header>

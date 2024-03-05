@@ -74,7 +74,7 @@ const contact = () => {
           <Link href='/' className="lg:text-base text-[12px] lg:pr-14 pr-4">Home</Link>
           <Link href='/aboutus' className="lg:text-base text-[12px] lg:pr-14 pr-4">About Us</Link>
           <Link href='/contact' className="lg:text-base text-[12px] lg:pr-14 pr-4">Contact Us</Link>
-          <Link href='/privacy' className="lg:text-base text-[12px]">Privacy Policy</Link>
+          {/*<Link href='/privacy' className="lg:text-base text-[12px]">Privacy Policy</Link>*/}
         </div>
 
         <div className="pt-6 text-center contacttextbox text-white">
